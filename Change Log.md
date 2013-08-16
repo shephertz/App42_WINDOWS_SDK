@@ -1,4 +1,4 @@
-* [Release Version 1.5]()
+* [Release Version 1.5](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Change%20Log.md#version-15)
 
 
 ## Version 1.5
