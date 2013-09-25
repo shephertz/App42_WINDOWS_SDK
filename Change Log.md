@@ -11,6 +11,7 @@
 
 ```
 Achievement Service
+Avatar Service
 ```
 
 **The following features have been pushed to the services :**
@@ -18,17 +19,24 @@ Achievement Service
 **SOCIAL SERVICE**
 
 ```
-facebookPublishStream
-facebookLinkPost
-facebookLinkPostWithCustomThumbnail
-getFacebookProfile
+FacebookPublishStream
+FacebookLinkPost
+FacebookLinkPostWithCustomThumbnail
+GetFacebookProfile
 ```
 
 **PUSHNOTIFICATION SERVICE**
 
 ```
-sendPushMessageToGroup
-deleteDeviceToken
+SendPushMessageToGroup
+DeleteDeviceToken
+```
+
+**LOG SERVICE**
+
+```
+SetEvent(eventName)
+SetEvent(moduleName,eventName)
 ```
 
 
