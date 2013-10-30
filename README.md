@@ -1,7 +1,7 @@
 App42_BPaaS_Windows_SDK
 ================
 
-App42 BPaaS Cloud API Client SDK files for WINDOWS
+App42 BPaaS Cloud API Client SDK for WINDOWS
 
 - Download the App42 BPaaS WINDOWS SDK
 - Unzip the file and open **App42 WINDOWS Sample** project.
