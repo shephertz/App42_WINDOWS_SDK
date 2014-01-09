@@ -88,4 +88,4 @@ public class Callback : App42Callback
 }  
 ```
 
-Visit our [Windows Developer home page](!http://api.shephertz.com/app42-dev/windows-phone-backend-apis.php) to learn more about App42 Windows SDK.
+Visit our [Windows Developer home page](http://api.shephertz.com/app42-dev/windows-phone-backend-apis.php) to learn more about App42 Windows SDK.
