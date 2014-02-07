@@ -21,7 +21,6 @@ using com.shephertz.app42.paas.sdk.windows.game;
 
 namespace App42Sample
 {
-  
     public partial class ServicesPage : PhoneApplicationPage,App42Callback
     {
      

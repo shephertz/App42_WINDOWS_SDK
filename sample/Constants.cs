@@ -9,8 +9,8 @@ namespace App42Sample
     {
         public static String apiKey = "API_KEY";
         public static String secretKey = "SECRET_KEY";
-        public static String gameName = "Devil May Cry";
-        public static String dbName = "queryTest";
+        public static String gameName = "WindowsGame";
+        public static String dbName = "DbName";
         public static String collectionName = "WindowsTestCollection";
         public static String uname = null;
         public static String userName = "Nick";

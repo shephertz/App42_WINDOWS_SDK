@@ -89,3 +89,21 @@ F:\work for windows\app42-Windows-Sdk\sample\Bin\Debug\Newtonsoft.Json.WindowsPh
 F:\work for windows\app42-Windows-Sdk\sample\Bin\Debug\App42_WINDOWS_SDK_2.0.pdb
 F:\work for windows\app42-Windows-Sdk\sample\Bin\Debug\Microsoft.Phone.Controls.xml
 F:\work for windows\app42-Windows-Sdk\sample\obj\Debug\XapCacheFile.xml
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\ApplicationIcon.png
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\Background.png
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\App42Sample.dll
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\App42Sample.pdb
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\AppManifest.xaml
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\App42Sample.xap
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\App42_WINDOWS_SDK_2.1.dll
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\Newtonsoft.Json.WindowsPhone.dll
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\Bin\Debug\Microsoft.Phone.Controls.xml
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\obj\Debug\App42Sample.csprojResolveAssemblyReference.cache
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\obj\Debug\App.g.i.cs
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\obj\Debug\leaderboard.g.i.cs
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\obj\Debug\ServicesPage.g.i.cs
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\obj\Debug\App42Sample.g.resources
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\obj\Debug\App42Sample.dll
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\obj\Debug\App42Sample.pdb
+D:\@Public_SDK_Master\App42_Windows_SDK\sample\obj\Debug\XapCacheFile.xml
