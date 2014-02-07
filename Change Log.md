@@ -13,6 +13,12 @@
 
 **Release Version:** 2.1
 
+**The following features have been pushed  :**
+
+```
+MetaInfo in UserService (GetUser, GetUsersByRole, GetUserByEmailId) and ScoreBoardService(GetTopNRankers, GetTopNTargetRankers).
+```
+
 **The following features have been pushed to the services :**
 
 **STORAGE SERVICE**
