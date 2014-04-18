@@ -1,5 +1,5 @@
-App42_WINDOWS_SDK
-=================
+App42_WINDOWS_PHONE_SDK
+=======================
 
 1. [Register] (https://apphq.shephertz.com/register) with App42 platform.
 2. Create an app once you are on Quick start page after registration.
