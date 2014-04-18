@@ -1,3 +1,4 @@
+* [Release Version 2.3](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-23)
 * [Release Version 2.2](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-22)
 * [Release Version 2.1](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-21)
 * [Release Version 2.0](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-20)
@@ -7,6 +8,15 @@
 * [Release Version 1.8](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-18)
 * [Release Version 1.7](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-17)
 * [Release Version 1.5](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-15)
+ 
+## Version 2.3
+
+**Release Date:** 18-04-2014
+
+**Release Version:** 2.3
+
+**SDK ReStructured**
+
 
 ## Version 2.2
 
