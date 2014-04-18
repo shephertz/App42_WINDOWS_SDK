@@ -1,0 +1,8 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="App42Sample" EntryPointType="App42Sample.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="App42Sample" Source="App42Sample.dll" />
+    <AssemblyPart x:Name="App42_WINDOWS_PHONE_SDK_2.3" Source="App42_WINDOWS_PHONE_SDK_2.3.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Newtonsoft.Json.WindowsPhone" Source="Newtonsoft.Json.WindowsPhone.dll" />
+  </Deployment.Parts>
+</Deployment>
