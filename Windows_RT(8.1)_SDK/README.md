@@ -9,11 +9,11 @@ __Download And Set Up SDK :-__
 
 1). [Download] (https://github.com/shephertz/App42_WINDOWS_SDK/archive/master.zip) Window SDK
 
-2). Unzip downloaded Zip file. Unzip folder contains version folder of dll and sample folder.
+2). Unzip downloaded Zip file. Unzip folder contains two seperate folders for Windows-Phone and Windows-RT(8.1), and each folder contains version folder(ie. 1.0, 1.1 etc).
 
-3). Version folder will contain App42_WINDOWS_SDK_x.x.x.dll and Newtonsoft.Json.WindowsPhone.dll.
+3). In  Windows_RT(8.1)_SDK's version folder will contain App42_WINDOWS_SDK_x.x.x.dll and Newtonsoft.Json.dll.
 
-4). Then add App42_WINDOWS_SDK_x.x.x.dll and Newtonsoft.Json.WindowsPhone.dll in your reference.
+4). Then add App42_WINDOWS_SDK_x.x.x.dll and Newtonsoft.Json.dll in your reference.
 
 __Initializing SDK :-__
 You have to instantiate App42API by putting your ApiKey/SecretKey to initialize the SDK.
