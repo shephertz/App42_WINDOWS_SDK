@@ -1,0 +1,363 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service}}
+}
+
+
+Define a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} e.\+g. Sword, Energy etc. Is needed for \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} Points The Game service allows Game, User, Score and Score\+Board Management on the Cloud. The service allows Game Developer to create a Game and then do in Game Scoring using the Score service. It also allows to maintain a Scoreboard across game sessions using the Score\+Board service. One can query for average or highest score for user for a Game and highest and average score across users for a Game. It also gives ranking of the user against other users for a particular game. The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} and Reward\+Points allows the Game Developer to assign rewards to a user and redeem the rewards. E.\+g. One can give Swords or Energy etc. The services Game, Score, Score\+Board, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward}, Reward\+Points can be used in Conjunction for complete Game Scoring and \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} Management.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a13fd55a20dbd832f2dec74a22e955f7a}{Reward\+Service} (String api\+Key, String secret\+Key, String base\+U\+R\+L)
+\begin{DoxyCompactList}\small\item\em this is a constructor that takes \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_aaaef8870a1fec008160a4ae8d7a3a2d9}{Create\+Reward} (String reward\+Name, String reward\+Description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward}. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} can be Sword, Energy etc. When \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} Points have to be added the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} name created using this method has to be specified. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_aa76d050365a7a93dcd3ef5275dec6680}{Get\+All\+Rewards} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetches all the Rewards \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ab2183b5532c0ab54a66549461b1eb837}{Get\+All\+Rewards\+Count} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetches the count of all the Rewards \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a026357b371c3fff2d61cc266703b7888}{Get\+All\+Rewards} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetches all the Rewards by paging. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a78ebb72df1f7d9c67d68152dc716cf33}{Get\+Reward\+By\+Name} (String reward\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Retrieves the reward for the specified name \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ac401bd0f7ef773a596d942b4e839de10}{Earn\+Rewards} (String game\+Name, String game\+User\+Name, String reward\+Name, Double reward\+Points, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5d74aa90d0781e8dfe9a72362e07565e}{Redeem\+Rewards} (String game\+Name, String game\+User\+Name, String reward\+Name, Double reward\+Points, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ad23eb02679be1d871d97b216e4e80e6f}{Get\+Game\+Reward\+Points\+For\+User} (String game\+Name, String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a4a2e706182458157090597b4fc1edb73}{Get\+Top\+N\+Reward\+Earners} (String game\+Name, String reward\+Name, int max, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em This function provides a list of specified number of top reward earners for a specific game. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_af519a4c7d6dc95b9acc35d37f39e6d28}{Get\+All\+Rewards\+By\+User} (String user\+Name, String reward\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em This function returns you the details of all the specific rewards earned by the specified user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5625115a1469b8caf2c479eb2f56eb2d}{Get\+Top\+N\+Reward\+Earners\+By\+Group} (String game\+Name, String reward\+Name, I\+List$<$ String $>$ user\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em This function returns you a list of group wise users who earned the top rewards in the specified game . \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5907bb03a2dcf80e045f118447c2d2e3}{Get\+User\+Ranking\+On\+Reward} (String game\+Name, String reward\+Name, String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Get User Ranking On \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward}. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_adbd3aa6400c630385c4f398aae0dadf8}{override void {\bfseries On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_adbd3aa6400c630385c4f398aae0dadf8}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a7e065cd214a08469d0f7b8fab959dd9f}{override void {\bfseries On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a7e065cd214a08469d0f7b8fab959dd9f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Define a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} e.\+g. Sword, Energy etc. Is needed for \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} Points The Game service allows Game, User, Score and Score\+Board Management on the Cloud. The service allows Game Developer to create a Game and then do in Game Scoring using the Score service. It also allows to maintain a Scoreboard across game sessions using the Score\+Board service. One can query for average or highest score for user for a Game and highest and average score across users for a Game. It also gives ranking of the user against other users for a particular game. The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} and Reward\+Points allows the Game Developer to assign rewards to a user and redeem the rewards. E.\+g. One can give Swords or Energy etc. The services Game, Score, Score\+Board, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward}, Reward\+Points can be used in Conjunction for complete Game Scoring and \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} Management. 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service}{Game, Reward\+Point, Score, Score\+Board} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a13fd55a20dbd832f2dec74a22e955f7a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Reward\+Service@{Reward\+Service}}
+\index{Reward\+Service@{Reward\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Reward\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Reward\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key, }
+\item[{String}]{base\+U\+R\+L}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a13fd55a20dbd832f2dec74a22e955f7a}
+
+
+this is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key\\
+\hline
+{\em base\+U\+R\+L} & base\+U\+R\+L\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_aaaef8870a1fec008160a4ae8d7a3a2d9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Create\+Reward@{Create\+Reward}}
+\index{Create\+Reward@{Create\+Reward}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Create\+Reward}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Create\+Reward (
+\begin{DoxyParamCaption}
+\item[{String}]{reward\+Name, }
+\item[{String}]{reward\+Description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_aaaef8870a1fec008160a4ae8d7a3a2d9}
+
+
+Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward}. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} can be Sword, Energy etc. When \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} Points have to be added the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} name created using this method has to be specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reward\+Name} & The reward that has to be created\\
+\hline
+{\em reward\+Description} & The description of the reward to be created\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ac401bd0f7ef773a596d942b4e839de10}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Earn\+Rewards@{Earn\+Rewards}}
+\index{Earn\+Rewards@{Earn\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Earn\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Earn\+Rewards (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{game\+User\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{Double}]{reward\+Points, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ac401bd0f7ef773a596d942b4e839de10}
+
+
+
+
+Adds the reward points to an users account. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} Points can be earned by the user which can be redeemed later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be added\\
+\hline
+{\em game\+User\+Name} & The user for whom reward points have to be added\\
+\hline
+{\em reward\+Name} & The rewards for which reward points have to be added\\
+\hline
+{\em reward\+Points} & The points that have to be added\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_aa76d050365a7a93dcd3ef5275dec6680}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards@{Get\+All\+Rewards}}
+\index{Get\+All\+Rewards@{Get\+All\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+All\+Rewards (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_aa76d050365a7a93dcd3ef5275dec6680}
+
+
+Fetches all the Rewards 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a026357b371c3fff2d61cc266703b7888}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards@{Get\+All\+Rewards}}
+\index{Get\+All\+Rewards@{Get\+All\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+All\+Rewards (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a026357b371c3fff2d61cc266703b7888}
+
+
+Fetches all the Rewards by paging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_af519a4c7d6dc95b9acc35d37f39e6d28}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards\+By\+User@{Get\+All\+Rewards\+By\+User}}
+\index{Get\+All\+Rewards\+By\+User@{Get\+All\+Rewards\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+All\+Rewards\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_af519a4c7d6dc95b9acc35d37f39e6d28}
+
+
+This function returns you the details of all the specific rewards earned by the specified user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user whose rewards are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which details are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ab2183b5532c0ab54a66549461b1eb837}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+All\+Rewards\+Count@{Get\+All\+Rewards\+Count}}
+\index{Get\+All\+Rewards\+Count@{Get\+All\+Rewards\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+All\+Rewards\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+All\+Rewards\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ab2183b5532c0ab54a66549461b1eb837}
+
+
+Fetches the count of all the Rewards 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ad23eb02679be1d871d97b216e4e80e6f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+Game\+Reward\+Points\+For\+User@{Get\+Game\+Reward\+Points\+For\+User}}
+\index{Get\+Game\+Reward\+Points\+For\+User@{Get\+Game\+Reward\+Points\+For\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Game\+Reward\+Points\+For\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+Game\+Reward\+Points\+For\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_ad23eb02679be1d871d97b216e4e80e6f}
+
+
+
+
+Fetches the reward points for a particular user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be fetched\\
+\hline
+{\em user\+Name} & The user for whom reward points have to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a78ebb72df1f7d9c67d68152dc716cf33}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+Reward\+By\+Name@{Get\+Reward\+By\+Name}}
+\index{Get\+Reward\+By\+Name@{Get\+Reward\+By\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Reward\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+Reward\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{reward\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a78ebb72df1f7d9c67d68152dc716cf33}
+
+
+Retrieves the reward for the specified name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reward\+Name} & Name of the reward that has to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a4a2e706182458157090597b4fc1edb73}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+Top\+N\+Reward\+Earners@{Get\+Top\+N\+Reward\+Earners}}
+\index{Get\+Top\+N\+Reward\+Earners@{Get\+Top\+N\+Reward\+Earners}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Top\+N\+Reward\+Earners}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+Top\+N\+Reward\+Earners (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{int}]{max, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a4a2e706182458157090597b4fc1edb73}
+
+
+This function provides a list of specified number of top reward earners for a specific game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward earners are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which list of earners is to be fetched\\
+\hline
+{\em max} & Specifies the number of top earners to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+List of \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward} object
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5625115a1469b8caf2c479eb2f56eb2d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+Top\+N\+Reward\+Earners\+By\+Group@{Get\+Top\+N\+Reward\+Earners\+By\+Group}}
+\index{Get\+Top\+N\+Reward\+Earners\+By\+Group@{Get\+Top\+N\+Reward\+Earners\+By\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+Top\+N\+Reward\+Earners\+By\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+Top\+N\+Reward\+Earners\+By\+Group (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{I\+List$<$ String $>$}]{user\+List, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5625115a1469b8caf2c479eb2f56eb2d}
+
+
+This function returns you a list of group wise users who earned the top rewards in the specified game . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which top reward earners are to be fetched\\
+\hline
+{\em reward\+Name} & Name of the reward for which top earners are to be listed\\
+\hline
+{\em user\+List} & List of group wise users earning specified rewards\\
+\hline
+{\em request\+Callback} & \\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5907bb03a2dcf80e045f118447c2d2e3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Get\+User\+Ranking\+On\+Reward@{Get\+User\+Ranking\+On\+Reward}}
+\index{Get\+User\+Ranking\+On\+Reward@{Get\+User\+Ranking\+On\+Reward}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Get\+User\+Ranking\+On\+Reward}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Get\+User\+Ranking\+On\+Reward (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5907bb03a2dcf80e045f118447c2d2e3}
+
+
+Get User Ranking On \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward}{Reward}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & \\
+\hline
+{\em reward\+Name} & \\
+\hline
+{\em user\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5d74aa90d0781e8dfe9a72362e07565e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}!Redeem\+Rewards@{Redeem\+Rewards}}
+\index{Redeem\+Rewards@{Redeem\+Rewards}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::reward\+::\+Reward\+Service}}
+\subsubsection[{Redeem\+Rewards}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+reward.\+Reward\+Service.\+Redeem\+Rewards (
+\begin{DoxyParamCaption}
+\item[{String}]{game\+Name, }
+\item[{String}]{game\+User\+Name, }
+\item[{String}]{reward\+Name, }
+\item[{Double}]{reward\+Points, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1reward_1_1_reward_service_a5d74aa90d0781e8dfe9a72362e07565e}
+
+
+
+
+Deducts the rewardpoints from the earned rewards by a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & Name of the game for which reward points have to be deducted\\
+\hline
+{\em game\+User\+Name} & The user for whom reward points have to be deducted\\
+\hline
+{\em reward\+Name} & The rewards for which reward points have to be deducted\\
+\hline
+{\em reward\+Points} & The points that have to be deducted\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}

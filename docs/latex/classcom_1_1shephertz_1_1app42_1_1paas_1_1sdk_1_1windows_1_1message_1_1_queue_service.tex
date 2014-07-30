@@ -1,0 +1,273 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service}}
+}
+
+
+Manages Asynchronous queues. Allows to create, delete, purge messages, view pending messages and get all messages  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_ae57eb384b7d4615a7b66f2564f864711}{Queue\+Service} (String api\+Key, String secret\+Key, String base\+U\+R\+L)
+\begin{DoxyCompactList}\small\item\em this is a constructor that takes \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af69adade5ad6cb36c8581156451b3757}{Create\+Pull\+Queue} (String queue\+Name, String queue\+Description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Creates a type Pull \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_aab7927f2c04fff25aecdd099727ef213}{Delete\+Pull\+Queue} (String queue\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Deletes the Pull type \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue} \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af3cc79f1d6f20e5849a73aeaf5e05c22}{Purge\+Pull\+Queue} (String queue\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Purges message on the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue}. Note\+: once the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue} is purged the messages are removed from the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue} and wont be available for dequeueing. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a6dee2b1d6d5b1c0ee0e0f7d30bf70fb9}{Pending\+Messages} (String queue\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Messages which are pending to be dequeue. Note\+: Calling this method does not \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a8d21c96e83c5b7cc283a6c04e0cc34a1}{Get\+Messages} (String queue\+Name, Double receive\+Time\+Out, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Messages are retrieved and dequeued from the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue}. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af4c50ba5c7a2ff374f70f228e6626dde}{Send\+Message} (String queue\+Name, String msg, long exp, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Message Service Method Start Send message on the queue with an expiry. The message will expire if it is not pulled/dequeued before the expiry \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a5951dfc56c1a322f1222f67d14dcec7a}{Receive\+Message} (String queue\+Name, Double receive\+Time\+Out, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Pulls all the message from the queue \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a57051181c27b5973c55d876ea1feed59}{Receive\+Message\+By\+Correlation\+Id} (String queue\+Name, Double receive\+Time\+Out, String correlation\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Pull message based on the correlation id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a7f8ebc7db0d990de7444da56398a71da}{Remove\+Message} (String queue\+Name, String message\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Remove message from the queue based on the message id. Note\+: Once the message is removed it cannot be pulle \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a5cf42ee0340f6eead7ffec7fb2fa35b7}{override void {\bfseries On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a5cf42ee0340f6eead7ffec7fb2fa35b7}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_acc7061af079e19676232a0fc0e961913}{override void {\bfseries On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_acc7061af079e19676232a0fc0e961913}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Manages Asynchronous queues. Allows to create, delete, purge messages, view pending messages and get all messages 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service}{Queue} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_ae57eb384b7d4615a7b66f2564f864711}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Queue\+Service@{Queue\+Service}}
+\index{Queue\+Service@{Queue\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Queue\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Queue\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key, }
+\item[{String}]{base\+U\+R\+L}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_ae57eb384b7d4615a7b66f2564f864711}
+
+
+this is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key\\
+\hline
+{\em base\+U\+R\+L} & base\+U\+R\+L\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af69adade5ad6cb36c8581156451b3757}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Create\+Pull\+Queue@{Create\+Pull\+Queue}}
+\index{Create\+Pull\+Queue@{Create\+Pull\+Queue}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Create\+Pull\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Create\+Pull\+Queue (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{String}]{queue\+Description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af69adade5ad6cb36c8581156451b3757}
+
+
+Creates a type Pull \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue which has to be created\\
+\hline
+{\em queue\+Description} & The description of the queue\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_aab7927f2c04fff25aecdd099727ef213}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Delete\+Pull\+Queue@{Delete\+Pull\+Queue}}
+\index{Delete\+Pull\+Queue@{Delete\+Pull\+Queue}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Delete\+Pull\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Delete\+Pull\+Queue (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_aab7927f2c04fff25aecdd099727ef213}
+
+
+Deletes the Pull type \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue which has to be deleted\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a8d21c96e83c5b7cc283a6c04e0cc34a1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Get\+Messages@{Get\+Messages}}
+\index{Get\+Messages@{Get\+Messages}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Get\+Messages}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Get\+Messages (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{Double}]{receive\+Time\+Out, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a8d21c96e83c5b7cc283a6c04e0cc34a1}
+
+
+Messages are retrieved and dequeued from the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue which have to be retrieved\\
+\hline
+{\em receive\+Time\+Out} & Receive time out\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a6dee2b1d6d5b1c0ee0e0f7d30bf70fb9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Pending\+Messages@{Pending\+Messages}}
+\index{Pending\+Messages@{Pending\+Messages}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Pending\+Messages}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Pending\+Messages (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a6dee2b1d6d5b1c0ee0e0f7d30bf70fb9}
+
+
+Messages which are pending to be dequeue. Note\+: Calling this method does not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue from which pending messages have to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af3cc79f1d6f20e5849a73aeaf5e05c22}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Purge\+Pull\+Queue@{Purge\+Pull\+Queue}}
+\index{Purge\+Pull\+Queue@{Purge\+Pull\+Queue}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Purge\+Pull\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Purge\+Pull\+Queue (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af3cc79f1d6f20e5849a73aeaf5e05c22}
+
+
+Purges message on the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue}. Note\+: once the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue} is purged the messages are removed from the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue}{Queue} and wont be available for dequeueing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue which has to be purged\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a5951dfc56c1a322f1222f67d14dcec7a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Receive\+Message@{Receive\+Message}}
+\index{Receive\+Message@{Receive\+Message}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Receive\+Message}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Receive\+Message (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{Double}]{receive\+Time\+Out, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a5951dfc56c1a322f1222f67d14dcec7a}
+
+
+Pulls all the message from the queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue from which messages have to be pulled\\
+\hline
+{\em receive\+Time\+Out} & Receive time out\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a57051181c27b5973c55d876ea1feed59}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Receive\+Message\+By\+Correlation\+Id@{Receive\+Message\+By\+Correlation\+Id}}
+\index{Receive\+Message\+By\+Correlation\+Id@{Receive\+Message\+By\+Correlation\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Receive\+Message\+By\+Correlation\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Receive\+Message\+By\+Correlation\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{Double}]{receive\+Time\+Out, }
+\item[{String}]{correlation\+Id, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a57051181c27b5973c55d876ea1feed59}
+
+
+Pull message based on the correlation id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue from which the message has to be pulled\\
+\hline
+{\em receive\+Time\+Out} & Receive time out\\
+\hline
+{\em correlation\+Id} & Correlation Id for which message has to be pulled\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a7f8ebc7db0d990de7444da56398a71da}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Remove\+Message@{Remove\+Message}}
+\index{Remove\+Message@{Remove\+Message}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Remove\+Message}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Remove\+Message (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{String}]{message\+Id, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_a7f8ebc7db0d990de7444da56398a71da}
+
+
+Remove message from the queue based on the message id. Note\+: Once the message is removed it cannot be pulle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue from which the message has to be removed\\
+\hline
+{\em message\+Id} & The message id of the message which has to be removed.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af4c50ba5c7a2ff374f70f228e6626dde}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}!Send\+Message@{Send\+Message}}
+\index{Send\+Message@{Send\+Message}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::message\+::\+Queue\+Service}}
+\subsubsection[{Send\+Message}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+message.\+Queue\+Service.\+Send\+Message (
+\begin{DoxyParamCaption}
+\item[{String}]{queue\+Name, }
+\item[{String}]{msg, }
+\item[{long}]{exp, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1message_1_1_queue_service_af4c50ba5c7a2ff374f70f228e6626dde}
+
+
+Message Service Method Start Send message on the queue with an expiry. The message will expire if it is not pulled/dequeued before the expiry 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Name} & The name of the queue to which the message has to be sent\\
+\hline
+{\em msg} & Message that has to be sent\\
+\hline
+{\em exp} & Message expiry time\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}

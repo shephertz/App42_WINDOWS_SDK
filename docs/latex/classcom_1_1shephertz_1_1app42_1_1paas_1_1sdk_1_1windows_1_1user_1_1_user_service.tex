@@ -1,0 +1,655 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service}}
+}
+
+
+Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} for the App. App42 Cloud A\+P\+I's provides a complete \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} Management for any Mobile or Web App. It supports \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} registration, retrieval, state management e.\+g. lock, delete and Authentication. Along with \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} management the platform provides A\+P\+I's for persistent Session\+Management  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a1f2735751f49689d6c4093a2f52bab68}{User\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em This is a constructor that takes \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a737f4de4c3455003279539ba095c3405}{Create\+User} (String u\+Name, String pwd, String email\+Address, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Create \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} for the App. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_af658a8c804bcd58fddee8b74d772af1b}{Get\+User} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets user details based on user\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a81ccb064bfe31044707c0bcd465f39fe}{Update\+User} (String u\+Name, String email\+Address, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Updates the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} based on user\+Name. Note\+: Only email can be updated. Username cannot be updated. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a9d4eefc379074f616207a4a640d96b50}{Delete\+User} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Deletes a particular user based on user\+Name. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a44a22dab9f1fe4879084c884bf1a7219}{Create\+Or\+Update\+Profile} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} user\+Obj, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Creates or Updates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} Profile. First time the Profile for the user is created and in future calls user profile will be updated. This will always update the profile with new value passed in profile object. Call to this method should have all the values you want to retain in user profile object, otherwise old values of profile will get updated with null. Method only updates the profile of user, passing email/password in user object does not have any significance for this method call. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ac0d67fe07efa022cb7bb8e3ddb75191b}{Authenticate} (String u\+Name, String pwd, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Authenticate user based on user\+Name and password. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a58ff8353f9a3de8d30299224c1d935e0}{Lock\+User} (String u\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Locks the user based on the user\+Name. Apps can use these feature to lock a user because of reasons specific to their usercase e.\+g. If payment not received and the App wants the user to be inactive. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a2d07241e30e2518246ec122597209e50}{Unlock\+User} (String u\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Unlock the user based on the user\+Name. Apps can use these feature to unlock a user because of reasons specific to their usercase e.\+g. If payment received and the App wants to the user to be active. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a1d8879644410f4951bed7658c8074871}{Change\+User\+Password} (String u\+Name, String old\+Pwd, String new\+Pwd, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Change the password for user based on the user\+Name. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a4c0e2e137d0915f18c44f4e3673664ee}{Get\+All\+Users} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a2ad375a7eac73e919fffffac797f06d2}{Get\+All\+Users\+Count} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7f9aec14978719de29bb7b1c3557d43f}{Get\+All\+Users} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets All users By Paging \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae810559775805a34ee1205dd4e76d0df}{Get\+Locked\+Users} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets All the locked users details \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_af2092558fd52d93ba256cbf371317550}{Get\+Locked\+Users\+Count} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets the count of all the locked users \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7dd2c4c0fafa7d0cb05fed4e556d0f71}{Get\+Locked\+Users} (int max, int offset, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets All the locked users details \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a17c9c9f51d99783bc633b5dffda81901}{Get\+User\+By\+Email\+Id} (String email\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets user details based on email\+Id. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a29fa82e562c42245954e685c84050782}{Create\+User} (String u\+Name, String pwd, String email\+Address, I\+List$<$ String $>$ role\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ac4a492f0d6869990b8e28d0793c78098}{Assign\+Roles} (String u\+Name, I\+List$<$ String $>$ role\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae31b6376a1d5f74e289d5835689413f9}{Get\+Roles\+By\+User} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a124c4bc8927a6e2dd3398e10ec2bb88b}{Get\+Users\+By\+Role} (String role, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a81f3442333a33c66a5c83b50b5cfbd08}{Revoke\+Role} (String user\+Name, String role, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae9a1b4f70d7fc12d1a3bf7a0efaabc61}{Revoke\+All\+Roles} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a064fdeed6dc0a40d15290f8850d3426d}{void {\bfseries Reset\+User\+Password} (String u\+Name, String pwd, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a064fdeed6dc0a40d15290f8850d3426d}
+
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a90c9a3b5142911fdfea5886759320de2}{Reset\+User\+Password} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Reset \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} Password. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a754d12fe9f086c18ffe1a1c807d84a12}{Get\+Users\+By\+Profile\+Data} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_1_1_profile}{User.\+Profile} profile\+Data, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a1e843336d5a515f9455deb96312a7767}{String {\bfseries fill\+Params\+With\+Profile\+Data} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_1_1_profile}{User.\+Profile} profile\+Data)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a1e843336d5a515f9455deb96312a7767}
+
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_aefd25331c41b793a80018d78b1c74fd4}{Logout} (String session\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em logout \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a792e00b88fd404569a82d5f0ecb798b1}{Create\+User\+With\+Profile} (String u\+Name, String pwd, String email\+Address, \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_1_1_profile}{User.\+Profile} profile, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Creates the user with profile. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7c919c38330ba1d2bb3a2cc4e4036d6a}{Get\+Users\+By\+Group} (I\+List$<$ String $>$ users, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets the information about the users. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a87eb83fbcaf864d7ff3223ec06d85261}{Add\+J\+S\+O\+N\+Object} (String collection\+Name, J\+Object obj)
+\begin{DoxyCompactList}\small\item\em Adds the J\+S\+O\+N object. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae7c6fcbdfd9b71ec561e4231fb571063}{override void {\bfseries On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae7c6fcbdfd9b71ec561e4231fb571063}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7ca86a151265c6de00d3031e32fa13d1}{override void {\bfseries On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7ca86a151265c6de00d3031e32fa13d1}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} for the App. App42 Cloud A\+P\+I's provides a complete \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} Management for any Mobile or Web App. It supports \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} registration, retrieval, state management e.\+g. lock, delete and Authentication. Along with \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} management the platform provides A\+P\+I's for persistent Session\+Management 
+
+\begin{DoxySeeAlso}{See also}
+Session\+Service 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_response}{App42\+Response} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a1f2735751f49689d6c4093a2f52bab68}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!User\+Service@{User\+Service}}
+\index{User\+Service@{User\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{User\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+User\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a1f2735751f49689d6c4093a2f52bab68}
+
+
+This is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & \\
+\hline
+{\em secret\+Key} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a87eb83fbcaf864d7ff3223ec06d85261}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Add\+J\+S\+O\+N\+Object@{Add\+J\+S\+O\+N\+Object}}
+\index{Add\+J\+S\+O\+N\+Object@{Add\+J\+S\+O\+N\+Object}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Add\+J\+S\+O\+N\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Add\+J\+S\+O\+N\+Object (
+\begin{DoxyParamCaption}
+\item[{String}]{collection\+Name, }
+\item[{J\+Object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a87eb83fbcaf864d7ff3223ec06d85261}
+
+
+Adds the J\+S\+O\+N object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+Name} & Collection name.\\
+\hline
+{\em obj} & Object.\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ac4a492f0d6869990b8e28d0793c78098}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Assign\+Roles@{Assign\+Roles}}
+\index{Assign\+Roles@{Assign\+Roles}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Assign\+Roles}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Assign\+Roles (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{I\+List$<$ String $>$}]{role\+List, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ac4a492f0d6869990b8e28d0793c78098}
+summery$>$ Get Roles based on user\+Name /summery$>$ param name=u\+Namer$>$ User\+Name which should be unique for the App $<$/param\+Name$>$ param name=role\+List$>$ List of roles to be assigned to \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} $<$/param\+Name$>$ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ac0d67fe07efa022cb7bb8e3ddb75191b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Authenticate@{Authenticate}}
+\index{Authenticate@{Authenticate}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Authenticate}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Authenticate (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{String}]{pwd, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ac0d67fe07efa022cb7bb8e3ddb75191b}
+
+
+Authenticate user based on user\+Name and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & User\+Name which should be unique for the App\\
+\hline
+{\em pwd} & Password for the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User}\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} if authentication fails or username/password is blank or null \hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a1d8879644410f4951bed7658c8074871}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Change\+User\+Password@{Change\+User\+Password}}
+\index{Change\+User\+Password@{Change\+User\+Password}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Change\+User\+Password}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Change\+User\+Password (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{String}]{old\+Pwd, }
+\item[{String}]{new\+Pwd, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a1d8879644410f4951bed7658c8074871}
+
+
+Change the password for user based on the user\+Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & User\+Name which should be unique for the App\\
+\hline
+{\em old\+Pwd} & Old Password for the user for authentication.\\
+\hline
+{\em new\+Pwd} & New Password for the user to change.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a44a22dab9f1fe4879084c884bf1a7219}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Create\+Or\+Update\+Profile@{Create\+Or\+Update\+Profile}}
+\index{Create\+Or\+Update\+Profile@{Create\+Or\+Update\+Profile}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Create\+Or\+Update\+Profile}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Create\+Or\+Update\+Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf User}}]{user\+Obj, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a44a22dab9f1fe4879084c884bf1a7219}
+
+
+Creates or Updates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} Profile. First time the Profile for the user is created and in future calls user profile will be updated. This will always update the profile with new value passed in profile object. Call to this method should have all the values you want to retain in user profile object, otherwise old values of profile will get updated with null. Method only updates the profile of user, passing email/password in user object does not have any significance for this method call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Obj} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} for which profile has to be updated, this should contain the user\+Name and profile object in it. \\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a737f4de4c3455003279539ba095c3405}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Create\+User@{Create\+User}}
+\index{Create\+User@{Create\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Create\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Create\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{String}]{pwd, }
+\item[{String}]{email\+Address, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a737f4de4c3455003279539ba095c3405}
+
+
+Create \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} for the App. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & User\+Name which should be unique for the App.\\
+\hline
+{\em pwd} & Password for the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User}.\\
+\hline
+{\em email\+Address} & Email address of the user.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a29fa82e562c42245954e685c84050782}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Create\+User@{Create\+User}}
+\index{Create\+User@{Create\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Create\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Create\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{String}]{pwd, }
+\item[{String}]{email\+Address, }
+\item[{I\+List$<$ String $>$}]{role\+List, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a29fa82e562c42245954e685c84050782}
+summery$>$ Add Role for the App /summery$>$ param name=u\+Namer$>$ User\+Name which should be unique for the App $<$/param\+Name$>$ param name=role\+List$>$ List of roles to be assigned to \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} $<$/param\+Name$>$ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a792e00b88fd404569a82d5f0ecb798b1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Create\+User\+With\+Profile@{Create\+User\+With\+Profile}}
+\index{Create\+User\+With\+Profile@{Create\+User\+With\+Profile}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Create\+User\+With\+Profile}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Create\+User\+With\+Profile (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{String}]{pwd, }
+\item[{String}]{email\+Address, }
+\item[{{\bf User.\+Profile}}]{profile, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a792e00b88fd404569a82d5f0ecb798b1}
+
+
+Creates the user with profile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & U name.\\
+\hline
+{\em pwd} & Pwd.\\
+\hline
+{\em email\+Address} & Email address.\\
+\hline
+{\em profile} & Profile.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} Object
+\end{DoxyReturn}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a9d4eefc379074f616207a4a640d96b50}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Delete\+User@{Delete\+User}}
+\index{Delete\+User@{Delete\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Delete\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Delete\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a9d4eefc379074f616207a4a640d96b50}
+
+
+Deletes a particular user based on user\+Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User\+Name which should be unique for the App\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a4c0e2e137d0915f18c44f4e3673664ee}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+All\+Users@{Get\+All\+Users}}
+\index{Get\+All\+Users@{Get\+All\+Users}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+All\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+All\+Users (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a4c0e2e137d0915f18c44f4e3673664ee}
+Gets All users details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7f9aec14978719de29bb7b1c3557d43f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+All\+Users@{Get\+All\+Users}}
+\index{Get\+All\+Users@{Get\+All\+Users}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+All\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+All\+Users (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7f9aec14978719de29bb7b1c3557d43f}
+
+
+Gets All users By Paging 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} Information
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a2ad375a7eac73e919fffffac797f06d2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+All\+Users\+Count@{Get\+All\+Users\+Count}}
+\index{Get\+All\+Users\+Count@{Get\+All\+Users\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+All\+Users\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+All\+Users\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a2ad375a7eac73e919fffffac797f06d2}
+Gets the count of all the users 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae810559775805a34ee1205dd4e76d0df}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+Locked\+Users@{Get\+Locked\+Users}}
+\index{Get\+Locked\+Users@{Get\+Locked\+Users}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+Locked\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+Locked\+Users (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae810559775805a34ee1205dd4e76d0df}
+
+
+Gets All the locked users details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7dd2c4c0fafa7d0cb05fed4e556d0f71}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+Locked\+Users@{Get\+Locked\+Users}}
+\index{Get\+Locked\+Users@{Get\+Locked\+Users}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+Locked\+Users}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+Locked\+Users (
+\begin{DoxyParamCaption}
+\item[{int}]{max, }
+\item[{int}]{offset, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7dd2c4c0fafa7d0cb05fed4e556d0f71}
+
+
+Gets All the locked users details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum number of records to be fetched\\
+\hline
+{\em offset} & From where the records are to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_af2092558fd52d93ba256cbf371317550}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+Locked\+Users\+Count@{Get\+Locked\+Users\+Count}}
+\index{Get\+Locked\+Users\+Count@{Get\+Locked\+Users\+Count}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+Locked\+Users\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+Locked\+Users\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_af2092558fd52d93ba256cbf371317550}
+
+
+Gets the count of all the locked users 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae31b6376a1d5f74e289d5835689413f9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+Roles\+By\+User@{Get\+Roles\+By\+User}}
+\index{Get\+Roles\+By\+User@{Get\+Roles\+By\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+Roles\+By\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+Roles\+By\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae31b6376a1d5f74e289d5835689413f9}
+summery$>$ Get Users based on Role /summery$>$ param name=role$>$ Role which should be unique for the App $<$/param\+Name$>$ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_af658a8c804bcd58fddee8b74d772af1b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+User@{Get\+User}}
+\index{Get\+User@{Get\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_af658a8c804bcd58fddee8b74d772af1b}
+
+
+Gets user details based on user\+Name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User\+Name which should be unique for the App.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a17c9c9f51d99783bc633b5dffda81901}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+User\+By\+Email\+Id@{Get\+User\+By\+Email\+Id}}
+\index{Get\+User\+By\+Email\+Id@{Get\+User\+By\+Email\+Id}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+User\+By\+Email\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+User\+By\+Email\+Id (
+\begin{DoxyParamCaption}
+\item[{String}]{email\+Id, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a17c9c9f51d99783bc633b5dffda81901}
+
+
+Gets user details based on email\+Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email\+Id} & Email\+Id of the user to be retrieved.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}
+
+summery$>$ Create \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} for the App /summery$>$ param name=u\+Namer$>$ User\+Name which should be unique for the App. $<$/param\+Name$>$ param name=pwd$>$ Password for the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User}. $<$/param\+Name$>$ param name=email\+Address$>$Email address of the user. $<$/param\+Name$>$ param name=role\+List$>$ List of roles to be assigned to \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User}. $<$/param\+Name$>$ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7c919c38330ba1d2bb3a2cc4e4036d6a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+Users\+By\+Group@{Get\+Users\+By\+Group}}
+\index{Get\+Users\+By\+Group@{Get\+Users\+By\+Group}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+Users\+By\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+Users\+By\+Group (
+\begin{DoxyParamCaption}
+\item[{I\+List$<$ String $>$}]{users, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a7c919c38330ba1d2bb3a2cc4e4036d6a}
+
+
+Gets the information about the users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em users} & Users List.\\
+\hline
+{\em call\+Back} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a754d12fe9f086c18ffe1a1c807d84a12}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+Users\+By\+Profile\+Data@{Get\+Users\+By\+Profile\+Data}}
+\index{Get\+Users\+By\+Profile\+Data@{Get\+Users\+By\+Profile\+Data}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+Users\+By\+Profile\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+Users\+By\+Profile\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf User.\+Profile}}]{profile\+Data, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a754d12fe9f086c18ffe1a1c807d84a12}
+summery$>$ Builds a Parameter string from the profile\+Data. /summery$>$ param name=profile\+Data$>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_1_1_profile}{User.\+Profile} object that contains \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User}'s Profile information $<$/param\+Name$>$ \begin{DoxyReturn}{Returns}
+String
+\end{DoxyReturn}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a124c4bc8927a6e2dd3398e10ec2bb88b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Get\+Users\+By\+Role@{Get\+Users\+By\+Role}}
+\index{Get\+Users\+By\+Role@{Get\+Users\+By\+Role}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Get\+Users\+By\+Role}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Get\+Users\+By\+Role (
+\begin{DoxyParamCaption}
+\item[{String}]{role, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a124c4bc8927a6e2dd3398e10ec2bb88b}
+summery$>$ Revokes the specified role from the user. /summery$>$ param name=user\+Name$>$ User\+Name from whom the role has to be revoked $<$/param\+Name$>$ param name=role$>$ Role that has to be revoked $<$/param\+Name$>$ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a58ff8353f9a3de8d30299224c1d935e0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Lock\+User@{Lock\+User}}
+\index{Lock\+User@{Lock\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Lock\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Lock\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a58ff8353f9a3de8d30299224c1d935e0}
+
+
+Locks the user based on the user\+Name. Apps can use these feature to lock a user because of reasons specific to their usercase e.\+g. If payment not received and the App wants the user to be inactive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & User\+Name which should be unique for the App \\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_aefd25331c41b793a80018d78b1c74fd4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Logout@{Logout}}
+\index{Logout@{Logout}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Logout}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Logout (
+\begin{DoxyParamCaption}
+\item[{String}]{session\+Id, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_aefd25331c41b793a80018d78b1c74fd4}
+
+
+logout 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & session\+Id\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a90c9a3b5142911fdfea5886759320de2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Reset\+User\+Password@{Reset\+User\+Password}}
+\index{Reset\+User\+Password@{Reset\+User\+Password}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Reset\+User\+Password}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Reset\+User\+Password (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a90c9a3b5142911fdfea5886759320de2}
+
+
+Reset \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} Password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em request\+Callback} & \\
+\hline
+\end{DoxyParams}
+summery$>$ Get Users based on Profile Data /summery$>$ param name=profile\+Data$>$ Profile Data key/value for which Users need to be retrieved $<$/param\+Name$>$ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae9a1b4f70d7fc12d1a3bf7a0efaabc61}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Revoke\+All\+Roles@{Revoke\+All\+Roles}}
+\index{Revoke\+All\+Roles@{Revoke\+All\+Roles}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Revoke\+All\+Roles}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Revoke\+All\+Roles (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_ae9a1b4f70d7fc12d1a3bf7a0efaabc61}
+summery$>$ Updates the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} based on user\+Name. Note\+: Only email can be updated.\+Username cannot be updated. /summery$>$ param name=u\+Name$>$ User\+Name which should be unique for the App$<$/param\+Name$>$ param name=pwd$>$ Password to be reset$<$/param\+Name$>$ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a81f3442333a33c66a5c83b50b5cfbd08}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Revoke\+Role@{Revoke\+Role}}
+\index{Revoke\+Role@{Revoke\+Role}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Revoke\+Role}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Revoke\+Role (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{role, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a81f3442333a33c66a5c83b50b5cfbd08}
+summery$>$ Revokes all the roles from the user. /summery$>$ param name=user\+Name$>$ Name of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} from whom Roles have to be revoked $<$/param\+Name$>$ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a2d07241e30e2518246ec122597209e50}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Unlock\+User@{Unlock\+User}}
+\index{Unlock\+User@{Unlock\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Unlock\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Unlock\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a2d07241e30e2518246ec122597209e50}
+
+
+Unlock the user based on the user\+Name. Apps can use these feature to unlock a user because of reasons specific to their usercase e.\+g. If payment received and the App wants to the user to be active. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & User\+Name which should be unique for the App.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a81ccb064bfe31044707c0bcd465f39fe}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}!Update\+User@{Update\+User}}
+\index{Update\+User@{Update\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::user\+::\+User\+Service}}
+\subsubsection[{Update\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+user.\+User\+Service.\+Update\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{String}]{email\+Address, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user_service_a81ccb064bfe31044707c0bcd465f39fe}
+
+
+Updates the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1user_1_1_user}{User} based on user\+Name. Note\+: Only email can be updated. Username cannot be updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & User\+Name which should be unique for the App.\\
+\hline
+{\em email\+Address} & Email address of the user.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}

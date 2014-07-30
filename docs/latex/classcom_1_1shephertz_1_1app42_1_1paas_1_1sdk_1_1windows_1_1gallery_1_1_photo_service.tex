@@ -1,0 +1,282 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service}}
+}
+
+
+Adds Photo to the created \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} on the Cloud All photos for a given \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} can be managed through this service. Photos can be uploaded to the cloud. Uploaded photos are accessible through the generated U\+R\+L. The service also creates a thumbnail for the Photo which has been uploaded.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a501e84110ce35ffdf2a3158b3fdb6e0a}{Photo\+Service} (String api\+Key, String secret\+Key, String base\+U\+R\+L)
+\begin{DoxyCompactList}\small\item\em The costructor for the Service \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a6496f96aadf26b8b7041c3ef775c6717}{Add\+Photo} (String user\+Name, Stream stream, String album\+Name, String photo\+Name, String photo\+Description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Adds Photo for a particular user and album. The Photo is uploaded on the cloud \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a0db59a8dabf7df7309bef8609bf30776}{Add\+Tag\+To\+Photo} (String user\+Name, String album\+Name, String photo\+Name, I\+List$<$ String $>$ tag\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a09faaaab30f30167ab3ad88b67a5fa3e}{void {\bfseries Get\+Photos} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a09faaaab30f30167ab3ad88b67a5fa3e}
+
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_aa1a3c71730fbadec8389d51f3c0580c3}{Get\+Tagged\+Photos} (String user\+Name, String tag, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetch all the Photos based on the user\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_ad5d57a20edeb47dcfa06357c03e7a2cc}{Get\+Photos\+By\+Album\+Name} (String user\+Name, String album\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetch all Photos based on the user\+Name and album name \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a1e09e007cfb041b4c2c61a5404c53651}{Get\+Photos\+Count\+By\+Album\+Name} (String user\+Name, String album\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetch the count of all Photos based on the user\+Name and album name \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a2e63204205edb2dff6e265a2a094e4b7}{Get\+Photos\+By\+Album\+And\+Photo\+Name} (String user\+Name, String album\+Name, String photo\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetch the particular photo based on the user\+Name, album name and photo name \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a15e710ffb63f062bebeff56ff38e9221}{Remove\+Photo} (String user\+Name, String album\+Name, String photo\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Removes the particular Photo from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} for a particular user. Note\+: The Photo is removed from the cloud and wont be accessible in future \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a8218bc80b6050669fa8e21f7693bdf28}{void {\bfseries Grant\+Access} (String album\+Name, String photo\+Name, String user\+Name, I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_a_c_l}{A\+C\+L} $>$ acl\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a8218bc80b6050669fa8e21f7693bdf28}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a1a92670e2303bb93b7d6f42dd7da3242}{void {\bfseries Revoke\+Access} (String album\+Name, String photo\+Name, String user\+Name, I\+List$<$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_a_c_l}{A\+C\+L} $>$ acl\+List, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a1a92670e2303bb93b7d6f42dd7da3242}
+
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_adf32f5ddcbc50a47a4431da1fd56872c}{Update\+Photo} (String user\+Name, String album\+Name, String photo\+Name, String photo\+Description, Stream stream, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Updates the photo. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_adee502dea7adb25320dded6e6bb832cf}{override void {\bfseries On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_adee502dea7adb25320dded6e6bb832cf}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a5efceaa9b0c15c85e0a18575a91c32c5}{override void {\bfseries On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a5efceaa9b0c15c85e0a18575a91c32c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Adds Photo to the created \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} on the Cloud All photos for a given \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} can be managed through this service. Photos can be uploaded to the cloud. Uploaded photos are accessible through the generated U\+R\+L. The service also creates a thumbnail for the Photo which has been uploaded. 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service}{Album} \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service}{Photo} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a501e84110ce35ffdf2a3158b3fdb6e0a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Photo\+Service@{Photo\+Service}}
+\index{Photo\+Service@{Photo\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Photo\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Photo\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key, }
+\item[{String}]{base\+U\+R\+L}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a501e84110ce35ffdf2a3158b3fdb6e0a}
+
+
+The costructor for the Service 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & \\
+\hline
+{\em secret\+Key} & \\
+\hline
+{\em base\+U\+R\+L} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a6496f96aadf26b8b7041c3ef775c6717}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Add\+Photo@{Add\+Photo}}
+\index{Add\+Photo@{Add\+Photo}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Add\+Photo}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Add\+Photo (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{Stream}]{stream, }
+\item[{String}]{album\+Name, }
+\item[{String}]{photo\+Name, }
+\item[{String}]{photo\+Description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a6496f96aadf26b8b7041c3ef775c6717}
+
+
+Adds Photo for a particular user and album. The Photo is uploaded on the cloud 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the User whose photo has to be added\\
+\hline
+{\em album\+Name} & Name of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} in which photo has to be added\\
+\hline
+{\em photo\+Name} & Name of the Photo that has to be added\\
+\hline
+{\em photo\+Description} & Description of the Photo that has to be added\\
+\hline
+{\em path} & Path from where Photo has to be picked for addition\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}
+
+summery$>$ Adds tag to the Photo of the user in the album.$<$/summery$>$ param name= user\+Name$>$ Name of the User whose name has to be tagged to photo
+
+param name= album\+Name$>$ \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} name whose photo is to be tagged
+
+param name= photo\+Name$>$ Photo name to be tagged
+
+param name= tag\+List$>$ list of tages in Photo\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a0db59a8dabf7df7309bef8609bf30776}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Add\+Tag\+To\+Photo@{Add\+Tag\+To\+Photo}}
+\index{Add\+Tag\+To\+Photo@{Add\+Tag\+To\+Photo}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Add\+Tag\+To\+Photo}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Add\+Tag\+To\+Photo (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{album\+Name, }
+\item[{String}]{photo\+Name, }
+\item[{I\+List$<$ String $>$}]{tag\+List, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a0db59a8dabf7df7309bef8609bf30776}
+summery$>$ Fetch all the Photos based on the user\+Name$<$/summery$>$ param name= user\+Name$>$ Name of the User whose photos have to be fetched
+
+param name= tag\+List$>$ list of tages in Photo\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a2e63204205edb2dff6e265a2a094e4b7}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Get\+Photos\+By\+Album\+And\+Photo\+Name@{Get\+Photos\+By\+Album\+And\+Photo\+Name}}
+\index{Get\+Photos\+By\+Album\+And\+Photo\+Name@{Get\+Photos\+By\+Album\+And\+Photo\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Get\+Photos\+By\+Album\+And\+Photo\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Get\+Photos\+By\+Album\+And\+Photo\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{album\+Name, }
+\item[{String}]{photo\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a2e63204205edb2dff6e265a2a094e4b7}
+
+
+Fetch the particular photo based on the user\+Name, album name and photo name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the User whose photo has to be fetched\\
+\hline
+{\em album\+Name} & Name of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} from which photo has to be fetched\\
+\hline
+{\em photo\+Name} & Name of the Photo that has to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_ad5d57a20edeb47dcfa06357c03e7a2cc}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Get\+Photos\+By\+Album\+Name@{Get\+Photos\+By\+Album\+Name}}
+\index{Get\+Photos\+By\+Album\+Name@{Get\+Photos\+By\+Album\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Get\+Photos\+By\+Album\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Get\+Photos\+By\+Album\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{album\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_ad5d57a20edeb47dcfa06357c03e7a2cc}
+
+
+Fetch all Photos based on the user\+Name and album name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the User whose photos have to be fetched\\
+\hline
+{\em album\+Name} & Name of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} from which photos have to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a1e09e007cfb041b4c2c61a5404c53651}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Get\+Photos\+Count\+By\+Album\+Name@{Get\+Photos\+Count\+By\+Album\+Name}}
+\index{Get\+Photos\+Count\+By\+Album\+Name@{Get\+Photos\+Count\+By\+Album\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Get\+Photos\+Count\+By\+Album\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Get\+Photos\+Count\+By\+Album\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{album\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a1e09e007cfb041b4c2c61a5404c53651}
+
+
+Fetch the count of all Photos based on the user\+Name and album name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the User whose photos have to be fetched\\
+\hline
+{\em album\+Name} & Name of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} from which photos have to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_aa1a3c71730fbadec8389d51f3c0580c3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Get\+Tagged\+Photos@{Get\+Tagged\+Photos}}
+\index{Get\+Tagged\+Photos@{Get\+Tagged\+Photos}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Get\+Tagged\+Photos}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Get\+Tagged\+Photos (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{tag, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_aa1a3c71730fbadec8389d51f3c0580c3}
+
+
+Fetch all the Photos based on the user\+Name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the User whose photos have to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a15e710ffb63f062bebeff56ff38e9221}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Remove\+Photo@{Remove\+Photo}}
+\index{Remove\+Photo@{Remove\+Photo}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Remove\+Photo}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Remove\+Photo (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{album\+Name, }
+\item[{String}]{photo\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_a15e710ffb63f062bebeff56ff38e9221}
+
+
+Removes the particular Photo from the specified \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} for a particular user. Note\+: The Photo is removed from the cloud and wont be accessible in future 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the User whose photo has to be removed\\
+\hline
+{\em album\+Name} & Name of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} in which photo has to be removed\\
+\hline
+{\em photo\+Name} & Name of the Photo that has to be removed\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_adf32f5ddcbc50a47a4431da1fd56872c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}!Update\+Photo@{Update\+Photo}}
+\index{Update\+Photo@{Update\+Photo}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::gallery\+::\+Photo\+Service}}
+\subsubsection[{Update\+Photo}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+gallery.\+Photo\+Service.\+Update\+Photo (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{album\+Name, }
+\item[{String}]{photo\+Name, }
+\item[{String}]{photo\+Description, }
+\item[{Stream}]{stream, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_photo_service_adf32f5ddcbc50a47a4431da1fd56872c}
+
+
+Updates the photo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User name.\\
+\hline
+{\em album\+Name} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album}{Album} name.\\
+\hline
+{\em photo\+Name} & Photo name.\\
+\hline
+{\em photo\+Description} & Photo description.\\
+\hline
+{\em stream} & Stream.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}

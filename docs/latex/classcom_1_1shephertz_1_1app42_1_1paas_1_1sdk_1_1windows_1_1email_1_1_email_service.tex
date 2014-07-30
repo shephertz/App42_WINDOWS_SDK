@@ -1,0 +1,153 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service}}
+}
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_ab587a41eda045d4c09f8801fce43b8ac}{Email\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em this is a constructor that takes \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a06b128f67740bb5f5f833a3531e793e9}{Create\+Mail\+Configuration} (String email\+Host, Int64 email\+Port, String mail\+Id, String email\+Password, Boolean is\+S\+S\+L, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} Configuration using which in future the App developer can send mail \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a51d2106ef3d934cf3a53e90ce985d1fe}{Remove\+Email\+Configuration} (String email\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Removes email configuration for the given email id. Note\+: In future the developer wont be able to send mails through this id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_aeb103b03afaa9504c1253d960dee50fa}{Get\+Email\+Configurations} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets all \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} Configurations for the app \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a906e83ce54dc694866633e70e18428b1}{Send\+Mail} (String send\+To, String send\+Subject, String send\+Msg, String from\+Email, string email\+Mime, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a3df387bd0898e1c9db9124b47a4be037}{override void {\bfseries On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a3df387bd0898e1c9db9124b47a4be037}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a4e63120719e41fcbbfe7182c366c9899}{override void {\bfseries On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a4e63120719e41fcbbfe7182c366c9899}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_ab587a41eda045d4c09f8801fce43b8ac}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}!Email\+Service@{Email\+Service}}
+\index{Email\+Service@{Email\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}}
+\subsubsection[{Email\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service.\+Email\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_ab587a41eda045d4c09f8801fce43b8ac}
+
+
+this is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & \\
+\hline
+{\em secret\+Key} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a06b128f67740bb5f5f833a3531e793e9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}!Create\+Mail\+Configuration@{Create\+Mail\+Configuration}}
+\index{Create\+Mail\+Configuration@{Create\+Mail\+Configuration}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}}
+\subsubsection[{Create\+Mail\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service.\+Create\+Mail\+Configuration (
+\begin{DoxyParamCaption}
+\item[{String}]{email\+Host, }
+\item[{Int64}]{email\+Port, }
+\item[{String}]{mail\+Id, }
+\item[{String}]{email\+Password, }
+\item[{Boolean}]{is\+S\+S\+L, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a06b128f67740bb5f5f833a3531e793e9}
+
+
+Creates \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} Configuration using which in future the App developer can send mail 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email\+Host} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} Host to be used for sending mail\\
+\hline
+{\em email\+Port} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} Port to be used for sending mail\\
+\hline
+{\em mail\+Id} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} id to be used for sending mail\\
+\hline
+{\em email\+Password} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} Password to be used for sending mail\\
+\hline
+{\em is\+S\+S\+L} & Should be send using S\+S\+L or not\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}Construct a json body for Charge User \hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_aeb103b03afaa9504c1253d960dee50fa}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}!Get\+Email\+Configurations@{Get\+Email\+Configurations}}
+\index{Get\+Email\+Configurations@{Get\+Email\+Configurations}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}}
+\subsubsection[{Get\+Email\+Configurations}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service.\+Get\+Email\+Configurations (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_aeb103b03afaa9504c1253d960dee50fa}
+
+
+Gets all \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} Configurations for the app 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a51d2106ef3d934cf3a53e90ce985d1fe}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}!Remove\+Email\+Configuration@{Remove\+Email\+Configuration}}
+\index{Remove\+Email\+Configuration@{Remove\+Email\+Configuration}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}}
+\subsubsection[{Remove\+Email\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service.\+Remove\+Email\+Configuration (
+\begin{DoxyParamCaption}
+\item[{String}]{email\+Id, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a51d2106ef3d934cf3a53e90ce985d1fe}
+
+
+Removes email configuration for the given email id. Note\+: In future the developer wont be able to send mails through this id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email\+Id} & The email id for which the configuration has to be removed\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a906e83ce54dc694866633e70e18428b1}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}!Send\+Mail@{Send\+Mail}}
+\index{Send\+Mail@{Send\+Mail}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::email\+::\+Email\+Service}}
+\subsubsection[{Send\+Mail}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+email.\+Email\+Service.\+Send\+Mail (
+\begin{DoxyParamCaption}
+\item[{String}]{send\+To, }
+\item[{String}]{send\+Subject, }
+\item[{String}]{send\+Msg, }
+\item[{String}]{from\+Email, }
+\item[{string}]{email\+Mime, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_service_a906e83ce54dc694866633e70e18428b1}
+$<$summay$>$ Sends the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} to the specified recipient with the provided detail 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Email} & The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} Id using which the mail(s) has to be sent\\
+\hline
+{\em send\+To} & The email ids to which the email has to be sent. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} can be sent to multiple email ids. Multiple email ids can be passed using comma as the seperator e.\+g. \href{mailto:sid@shephertz.com}{\tt sid@shephertz.\+com}, \href{mailto:info@shephertz.com}{\tt info@shephertz.\+com} \\
+\hline
+{\em send\+Subject} & Subject of the \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} which has to be sent\\
+\hline
+{\em send\+Msg} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email}{Email} body which has to be sent\\
+\hline
+{\em email\+M\+I\+M\+E} & M\+I\+M\+E Type to be used for sending mail. \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email_1_1_email_m_i_m_e}{Email\+M\+I\+M\+E} available options are P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T\+\_\+\+M\+I\+M\+E\+\_\+\+T\+Y\+P\+E or H\+T\+M\+L\+\_\+\+T\+E\+X\+T\+\_\+\+M\+I\+M\+E\+\_\+\+T\+Y\+P\+E\\
+\hline
+\end{DoxyParams}
+/ 
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}

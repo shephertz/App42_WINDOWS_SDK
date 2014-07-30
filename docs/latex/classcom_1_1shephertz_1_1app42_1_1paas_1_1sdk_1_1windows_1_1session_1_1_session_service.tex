@@ -1,0 +1,240 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service}}
+}
+
+
+The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} Manager manages user sessions on the server side. It is a persistent \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} Manager. It allows to save attributes in the session and retrieve them. This \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} Manager is especially useful for Mobile/\+Device Apps which want to do session management.  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_add0eee60e2206dc5685bac82a480f269}{Session\+Service} (String api\+Key, String secret\+Key)
+\begin{DoxyCompactList}\small\item\em This is a constructor that takes \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_ad04b4816770aa70bab95d1a2ea1d9530}{Get\+Session} (String u\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Create \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} for the User. If the session does not exist it will create a new session \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a97cc6553b8e3324372c647f5b0b70688}{Get\+Session} (String u\+Name, Boolean is\+Create, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Create User \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} based on the is\+Create boolean parameter. If is\+Create is true and there is an existing session for the user, the existing session is returned. If there is no existing session for the user a new one is created. If is\+Create is false and there is an existing session, the existing session is returned if there is no existing session new one is not created \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_ae0c49c221130c2fe7ec01994848be52d}{Invalidate} (String session\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Invalidate a session based on the session id. All the attributes store in the session will be lost. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a8d156c0bb24b1e9240a91106b6f0e5ee}{Set\+Attribute} (String session\+Id, String attribute\+Name, String attribute\+Value, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Sets attribute in a session whose session id is provided. Attributes are stored in a key value pair. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a3deb2309c9fd4e0e7c2d3d2ff9738e80}{Get\+Attribute} (String session\+Id, String attribute\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets the attribute value in a session whose session id is provided. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a04d35f1404f5006e7bca378bf5d147fe}{Get\+All\+Attributes} (String session\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Gets all the attributes for a given session id \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a671d88f46bc4806ffc9f3bf79b48cb0c}{Remove\+Attribute} (String session\+Id, String attribute\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Removes the attribute from a session whose session id is provided. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a5357fb9548b4effa5744f9fe3add84b2}{Remove\+All\+Attributes} (String session\+Id, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Removes all the attributes for a given session id \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_aa1a280d4374a8662d22a74cba81bb89c}{override void {\bfseries On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_aa1a280d4374a8662d22a74cba81bb89c}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a4d4f89ddc6340fa1fdfe89394c155f6a}{override void {\bfseries On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a4d4f89ddc6340fa1fdfe89394c155f6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} Manager manages user sessions on the server side. It is a persistent \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} Manager. It allows to save attributes in the session and retrieve them. This \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} Manager is especially useful for Mobile/\+Device Apps which want to do session management. 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service}{Session} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_add0eee60e2206dc5685bac82a480f269}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Session\+Service@{Session\+Service}}
+\index{Session\+Service@{Session\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Session\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Session\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_add0eee60e2206dc5685bac82a480f269}
+
+
+This is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key.\\
+\hline
+{\em secret\+Key} & secret\+Key.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a04d35f1404f5006e7bca378bf5d147fe}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Get\+All\+Attributes@{Get\+All\+Attributes}}
+\index{Get\+All\+Attributes@{Get\+All\+Attributes}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Get\+All\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Get\+All\+Attributes (
+\begin{DoxyParamCaption}
+\item[{String}]{session\+Id, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a04d35f1404f5006e7bca378bf5d147fe}
+
+
+Gets all the attributes for a given session id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & The session id for which the attribute has to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a3deb2309c9fd4e0e7c2d3d2ff9738e80}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Get\+Attribute@{Get\+Attribute}}
+\index{Get\+Attribute@{Get\+Attribute}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Get\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{String}]{session\+Id, }
+\item[{String}]{attribute\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a3deb2309c9fd4e0e7c2d3d2ff9738e80}
+
+
+Gets the attribute value in a session whose session id is provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & The session id for which the attribute has to be fetched\\
+\hline
+{\em attribute\+Name} & The attribute key that has to be fetched\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_ad04b4816770aa70bab95d1a2ea1d9530}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Get\+Session@{Get\+Session}}
+\index{Get\+Session@{Get\+Session}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Get\+Session}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Get\+Session (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_ad04b4816770aa70bab95d1a2ea1d9530}
+
+
+Create \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} for the User. If the session does not exist it will create a new session 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & Username for which the session has to be created.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a97cc6553b8e3324372c647f5b0b70688}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Get\+Session@{Get\+Session}}
+\index{Get\+Session@{Get\+Session}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Get\+Session}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Get\+Session (
+\begin{DoxyParamCaption}
+\item[{String}]{u\+Name, }
+\item[{Boolean}]{is\+Create, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a97cc6553b8e3324372c647f5b0b70688}
+
+
+Create User \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} based on the is\+Create boolean parameter. If is\+Create is true and there is an existing session for the user, the existing session is returned. If there is no existing session for the user a new one is created. If is\+Create is false and there is an existing session, the existing session is returned if there is no existing session new one is not created 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Name} & Username for which the session has to be created.\\
+\hline
+{\em is\+Create} & A boolean value for specifying if an existing session is not there, should a new one is to be created or not.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_ae0c49c221130c2fe7ec01994848be52d}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Invalidate@{Invalidate}}
+\index{Invalidate@{Invalidate}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Invalidate}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Invalidate (
+\begin{DoxyParamCaption}
+\item[{String}]{session\+Id, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_ae0c49c221130c2fe7ec01994848be52d}
+
+
+Invalidate a session based on the session id. All the attributes store in the session will be lost. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & The session id for which the session has to be invalidated.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a5357fb9548b4effa5744f9fe3add84b2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Remove\+All\+Attributes@{Remove\+All\+Attributes}}
+\index{Remove\+All\+Attributes@{Remove\+All\+Attributes}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Remove\+All\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Remove\+All\+Attributes (
+\begin{DoxyParamCaption}
+\item[{String}]{session\+Id, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a5357fb9548b4effa5744f9fe3add84b2}
+
+
+Removes all the attributes for a given session id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & The session id for which the attributes has to be removed\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a671d88f46bc4806ffc9f3bf79b48cb0c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Remove\+Attribute@{Remove\+Attribute}}
+\index{Remove\+Attribute@{Remove\+Attribute}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Remove\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Remove\+Attribute (
+\begin{DoxyParamCaption}
+\item[{String}]{session\+Id, }
+\item[{String}]{attribute\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a671d88f46bc4806ffc9f3bf79b48cb0c}
+
+
+Removes the attribute from a session whose session id is provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & The session id for which the attribute has to be removed\\
+\hline
+{\em attribute\+Name} & The attribute key that has to be removed\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a8d156c0bb24b1e9240a91106b6f0e5ee}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}!Set\+Attribute@{Set\+Attribute}}
+\index{Set\+Attribute@{Set\+Attribute}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::session\+::\+Session\+Service}}
+\subsubsection[{Set\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+session.\+Session\+Service.\+Set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{String}]{session\+Id, }
+\item[{String}]{attribute\+Name, }
+\item[{String}]{attribute\+Value, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_service_a8d156c0bb24b1e9240a91106b6f0e5ee}
+
+
+Sets attribute in a session whose session id is provided. Attributes are stored in a key value pair. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session}{Session} id for which the attribute has to be saved.\\
+\hline
+{\em attribute\+Name} & The attribute key that needs to be stored\\
+\hline
+{\em attribute\+Value} & The attribute value that needs to be stored\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}

@@ -1,0 +1,351 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service}}
+}
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_aee1109ec6f3f50bd01b36b0445ecd4e2}{Avatar\+Service} (String api\+Key, String secret\+Key, String base\+U\+R\+L)
+\begin{DoxyCompactList}\small\item\em This is a constructor that takes \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a38d0ebd5c1c936ea2a89155713ec9ca0}{Create\+Avatar} (String avatar\+Name, String user\+Name, Stream stream, String description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Upload your own avatar from binary. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a564bc3fd4d4f449f28e1b6372af1224b}{Get\+Avatar\+By\+Name} (String avatar\+Name, String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Get detailed description of avatar. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ac369f338fca437ddc389e05f71c456c4}{Get\+All\+Avatars} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em View all avatars. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a4230c5d9d8034de205ae97538db855f9}{Get\+Current\+Avatar} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em View the latest avatar uploaded by user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a13edefc80d5bd973425869de14dace3c}{Change\+Current\+Avatar} (String user\+Name, String avatar\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Change your current avatar from existing avatars in app. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a852fa767397714fe2f4ad2574bbe64da}{Create\+Avatar\+From\+Facebook} (String avatar\+Name, String user\+Name, String access\+Token, String description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Import your avatar from Facebook based of given access token. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a89d67011e0e6b3d332bf5fbe7fbe1aaf}{Create\+Avatar\+From\+Web\+U\+R\+L} (String avatar\+Name, String user\+Name, String web\+Url, String description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Create avatar from any web media using U\+R\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ae9c60c9a7156a5cc20f29c7fa5ccc08c}{Delete\+All\+Avatars} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Delete all avatars of a particular user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a61bfc1392aeda849de4f663a29aee9c3}{Delete\+Avatar\+By\+Name} (String user\+Name, String avatar\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Delete a particular avatar based on name. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ad42cce3120dc56a25e1bbc277e7aab02}{Update\+Avatar} (String avatar\+Name, String user\+Name, String new\+Avatar\+Name, String description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Updates avatar name and description of existing avatars from app. \end{DoxyCompactList}\item 
+override void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ad24eaef413ac9e129e0005644de071dc}{On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)
+\begin{DoxyCompactList}\small\item\em On Success. \end{DoxyCompactList}\item 
+override void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a6b77f04a54eeba278c1f4373bcb7914c}{On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em On Exception \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_aee1109ec6f3f50bd01b36b0445ecd4e2}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Avatar\+Service@{Avatar\+Service}}
+\index{Avatar\+Service@{Avatar\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Avatar\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Avatar\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key, }
+\item[{String}]{base\+U\+R\+L}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_aee1109ec6f3f50bd01b36b0445ecd4e2}
+
+
+This is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key\\
+\hline
+{\em base\+U\+R\+L} & base\+U\+R\+L\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a13edefc80d5bd973425869de14dace3c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Change\+Current\+Avatar@{Change\+Current\+Avatar}}
+\index{Change\+Current\+Avatar@{Change\+Current\+Avatar}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Change\+Current\+Avatar}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Change\+Current\+Avatar (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{avatar\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a13edefc80d5bd973425869de14dace3c}
+
+
+Change your current avatar from existing avatars in app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user for which avatar is to be updated.\\
+\hline
+{\em avatar\+Name} & Name of the avatar to be updated.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a38d0ebd5c1c936ea2a89155713ec9ca0}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Create\+Avatar@{Create\+Avatar}}
+\index{Create\+Avatar@{Create\+Avatar}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Create\+Avatar}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Create\+Avatar (
+\begin{DoxyParamCaption}
+\item[{String}]{avatar\+Name, }
+\item[{String}]{user\+Name, }
+\item[{Stream}]{stream, }
+\item[{String}]{description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a38d0ebd5c1c936ea2a89155713ec9ca0}
+
+
+Upload your own avatar from binary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar\+Name} & Name of avatar to be created.\\
+\hline
+{\em user\+Name} & Name of the user who is creating avatar.\\
+\hline
+{\em stream} & The Input\+Stream for the Image file.\\
+\hline
+{\em description} & Description of the avatar.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a852fa767397714fe2f4ad2574bbe64da}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Create\+Avatar\+From\+Facebook@{Create\+Avatar\+From\+Facebook}}
+\index{Create\+Avatar\+From\+Facebook@{Create\+Avatar\+From\+Facebook}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Create\+Avatar\+From\+Facebook}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Create\+Avatar\+From\+Facebook (
+\begin{DoxyParamCaption}
+\item[{String}]{avatar\+Name, }
+\item[{String}]{user\+Name, }
+\item[{String}]{access\+Token, }
+\item[{String}]{description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a852fa767397714fe2f4ad2574bbe64da}
+
+
+Import your avatar from Facebook based of given access token. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar\+Name} & Name of avatar to be created.\\
+\hline
+{\em user\+Name} & Name of the user who is creating avatar\\
+\hline
+{\em access\+Token} & Facebook Access Token that has been received after authorization.\\
+\hline
+{\em description} & Description of the avatar\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a89d67011e0e6b3d332bf5fbe7fbe1aaf}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Create\+Avatar\+From\+Web\+U\+R\+L@{Create\+Avatar\+From\+Web\+U\+R\+L}}
+\index{Create\+Avatar\+From\+Web\+U\+R\+L@{Create\+Avatar\+From\+Web\+U\+R\+L}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Create\+Avatar\+From\+Web\+U\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Create\+Avatar\+From\+Web\+U\+R\+L (
+\begin{DoxyParamCaption}
+\item[{String}]{avatar\+Name, }
+\item[{String}]{user\+Name, }
+\item[{String}]{web\+Url, }
+\item[{String}]{description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a89d67011e0e6b3d332bf5fbe7fbe1aaf}
+
+
+Create avatar from any web media using U\+R\+L. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar\+Name} & Name of avatar to be created.\\
+\hline
+{\em user\+Name} & Name of the user who is creating avatar\\
+\hline
+{\em web\+Url} & Web\+U\+R\+L of photo which you want to create. \\
+\hline
+{\em description} & Description of the avatar\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ae9c60c9a7156a5cc20f29c7fa5ccc08c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Delete\+All\+Avatars@{Delete\+All\+Avatars}}
+\index{Delete\+All\+Avatars@{Delete\+All\+Avatars}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Delete\+All\+Avatars}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Delete\+All\+Avatars (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ae9c60c9a7156a5cc20f29c7fa5ccc08c}
+
+
+Delete all avatars of a particular user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user who wants to delete his/her all avatars.\\
+\hline
+{\em request\+Callback} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a61bfc1392aeda849de4f663a29aee9c3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Delete\+Avatar\+By\+Name@{Delete\+Avatar\+By\+Name}}
+\index{Delete\+Avatar\+By\+Name@{Delete\+Avatar\+By\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Delete\+Avatar\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Delete\+Avatar\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{avatar\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a61bfc1392aeda849de4f663a29aee9c3}
+
+
+Delete a particular avatar based on name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user who want to delete his/her avatar.\\
+\hline
+{\em avatar\+Name} & Name of the avatar to be deleted.\\
+\hline
+{\em request\+Callback} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ac369f338fca437ddc389e05f71c456c4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Get\+All\+Avatars@{Get\+All\+Avatars}}
+\index{Get\+All\+Avatars@{Get\+All\+Avatars}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Get\+All\+Avatars}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Get\+All\+Avatars (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ac369f338fca437ddc389e05f71c456c4}
+
+
+View all avatars. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user for which avatar is to fetched.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a564bc3fd4d4f449f28e1b6372af1224b}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Get\+Avatar\+By\+Name@{Get\+Avatar\+By\+Name}}
+\index{Get\+Avatar\+By\+Name@{Get\+Avatar\+By\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Get\+Avatar\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Get\+Avatar\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{avatar\+Name, }
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a564bc3fd4d4f449f28e1b6372af1224b}
+
+
+Get detailed description of avatar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar\+Name} & Name of the avatar which is to fetched.\\
+\hline
+{\em user\+Name} & Name of the user for which avatar is to be fetched.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a4230c5d9d8034de205ae97538db855f9}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Get\+Current\+Avatar@{Get\+Current\+Avatar}}
+\index{Get\+Current\+Avatar@{Get\+Current\+Avatar}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Get\+Current\+Avatar}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Get\+Current\+Avatar (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a4230c5d9d8034de205ae97538db855f9}
+
+
+View the latest avatar uploaded by user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user for which current avatar is to fetch.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a6b77f04a54eeba278c1f4373bcb7914c}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!On\+Exception@{On\+Exception}}
+\index{On\+Exception@{On\+Exception}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{On\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}override void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+On\+Exception (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Exception}}]{e, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_a6b77f04a54eeba278c1f4373bcb7914c}
+
+
+On Exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+{\em request\+Callback} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_service}{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+App42\+Service}.
+
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ad24eaef413ac9e129e0005644de071dc}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!On\+Success@{On\+Success}}
+\index{On\+Success@{On\+Success}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{On\+Success}]{\setlength{\rightskip}{0pt plus 5cm}override void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+On\+Success (
+\begin{DoxyParamCaption}
+\item[{String}]{response, }
+\item[{{\bf App42\+Callback}}]{request\+Callback, }
+\item[{Boolean}]{is\+Array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ad24eaef413ac9e129e0005644de071dc}
+
+
+On Success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & \\
+\hline
+{\em request\+Callback} & \\
+\hline
+{\em is\+Array} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_service}{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+App42\+Service}.
+
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ad42cce3120dc56a25e1bbc277e7aab02}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}!Update\+Avatar@{Update\+Avatar}}
+\index{Update\+Avatar@{Update\+Avatar}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::avatar\+::\+Avatar\+Service}}
+\subsubsection[{Update\+Avatar}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+avatar.\+Avatar\+Service.\+Update\+Avatar (
+\begin{DoxyParamCaption}
+\item[{String}]{avatar\+Name, }
+\item[{String}]{user\+Name, }
+\item[{String}]{new\+Avatar\+Name, }
+\item[{String}]{description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service_ad42cce3120dc56a25e1bbc277e7aab02}
+
+
+Updates avatar name and description of existing avatars from app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar\+Name} & Name of the avatar for which you want to update.\\
+\hline
+{\em user\+Name} & Name of the user for which you want to update his avatar.\\
+\hline
+{\em new\+Avatar\+Name} & Name of the new avatar.\\
+\hline
+{\em description} & Add New description about the avatar or put null to remain old.\\
+\hline
+{\em request\+Callback} & Callback object for success/exception result\\
+\hline
+\end{DoxyParams}

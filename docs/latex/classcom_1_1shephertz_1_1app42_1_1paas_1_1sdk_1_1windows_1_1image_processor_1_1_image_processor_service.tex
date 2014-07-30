@@ -1,0 +1,270 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service}}
+}
+
+
+The Image\+Processor service is a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image}{Image} utility service on the Cloud. Developers can upload files on the cloud and perform various \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image}{Image} Manipulation operations on the Uploaded Images e.\+g. resize, scale, thumbnail, crop etc. It is especially useful for Mobile Apps when they dont want to store Images locally and dont want to perform processor intensive operations. It is also useful for web applications who want to perform complex \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image}{Image} Operations  
+
+
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_ae19dcca6820d3ab1b45226dae881a448}{{\bfseries Image\+Processor\+Service} (String api\+Key, String secret\+Key, String base\+U\+R\+L)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_ae19dcca6820d3ab1b45226dae881a448}
+
+\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_aacd57bc888a2a6323e9a8a0460ae44ac}{Resize} (String name, Stream stream, int width, int height, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Resize image. Returns the original image url and converted image url. Images are stored on the cloud and can be accessed through the urls Resizing is done based on the width and height provided \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a3f1219f47d1ecf1a58cc5b20bc87c46e}{Thumbnail} (String name, Stream stream, int width, int height, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Creates a thumbnail of the image. There is a difference between thumbnail and resize The thumbnail operation is optimized for speed, it removes information of the image which is not necessary for a thumbnail e.\+g hearder information. Returns the original image url and converted image url. Images are stored on the cloud and can be accessed through the urls Resizing is done based on the width and height provided \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_ae76b03bf61304d81a23379a570fbb9f4}{Scale} (String name, Stream stream, int width, int height, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Scales the image based on width and height. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a21ddd1fbea12547f2e8fd2c2e7509b6a}{Crop} (String name, Stream stream, int width, int height, int x, int y, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Crops image based on width, height and x, y coordinates. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a5bb2c643de3bd3c099e02720f6de426e}{Resize\+By\+Percentage} (String name, Stream stream, Double percentage, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Resize image by Percentage. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a2dd5e7b9bc287e2cc24f41d9e1a753c8}{Thumbnail\+By\+Percentage} (String name, Stream stream, Double percentage, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Creates a thumbnail of the image by Percentage. There is a difference between thumbnail and resize The thumbnail operation is optimized for speed removes information of the image which is not necessary for a thumbnail to reduce size e.\+g hearder information. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a433f3afc47020b6380a525bf7d4caaaf}{Scale\+By\+Percentage} (String name, Stream stream, Double percentage, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Scales the image by Percentage. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_af6842713994ce8aa87249fd08bc37ede}{Convert\+Format} (String name, Stream input\+Stream, String format\+To\+Convert, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Converts the format of the image. Returns the original image url and converted image url. Images are stored on the cloud and can be accessed through the urls Conversion is done based on the format\+To\+Convert provided. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_aa7e756293a109998160bfee60ed1a457}{override void {\bfseries On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_aa7e756293a109998160bfee60ed1a457}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_aab5183d8a7e6987ff3cf0ea939f1314f}{override void {\bfseries On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_aab5183d8a7e6987ff3cf0ea939f1314f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The Image\+Processor service is a \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image}{Image} utility service on the Cloud. Developers can upload files on the cloud and perform various \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image}{Image} Manipulation operations on the Uploaded Images e.\+g. resize, scale, thumbnail, crop etc. It is especially useful for Mobile Apps when they dont want to store Images locally and dont want to perform processor intensive operations. It is also useful for web applications who want to perform complex \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image}{Image} Operations 
+
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service}{Image} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_af6842713994ce8aa87249fd08bc37ede}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}!Convert\+Format@{Convert\+Format}}
+\index{Convert\+Format@{Convert\+Format}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}}
+\subsubsection[{Convert\+Format}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service.\+Convert\+Format (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{input\+Stream, }
+\item[{String}]{format\+To\+Convert, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_af6842713994ce8aa87249fd08bc37ede}
+
+
+Converts the format of the image. Returns the original image url and converted image url. Images are stored on the cloud and can be accessed through the urls Conversion is done based on the format\+To\+Convert provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the image to convert\\
+\hline
+{\em input\+Stream} & Input\+Stream of the local file to convert\\
+\hline
+{\em format\+To\+Convert} & to which file needs to be converted\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a21ddd1fbea12547f2e8fd2c2e7509b6a}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}!Crop@{Crop}}
+\index{Crop@{Crop}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}}
+\subsubsection[{Crop}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service.\+Crop (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{stream, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a21ddd1fbea12547f2e8fd2c2e7509b6a}
+
+
+Crops image based on width, height and x, y coordinates. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the image to crop\\
+\hline
+{\em image\+Path} & Path of the local file to crop\\
+\hline
+{\em width} & Width of the image to crop\\
+\hline
+{\em height} & Height of the image to crop\\
+\hline
+{\em x} & Coordinate X\\
+\hline
+{\em y} & Coordinate y\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_aacd57bc888a2a6323e9a8a0460ae44ac}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}!Resize@{Resize}}
+\index{Resize@{Resize}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}}
+\subsubsection[{Resize}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service.\+Resize (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{stream, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_aacd57bc888a2a6323e9a8a0460ae44ac}
+
+
+Resize image. Returns the original image url and converted image url. Images are stored on the cloud and can be accessed through the urls Resizing is done based on the width and height provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the image to resize\\
+\hline
+{\em image\+Path} & Path of the local file to resize\\
+\hline
+{\em width} & Width of the image to resize\\
+\hline
+{\em height} & Height of the image to resize\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a5bb2c643de3bd3c099e02720f6de426e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}!Resize\+By\+Percentage@{Resize\+By\+Percentage}}
+\index{Resize\+By\+Percentage@{Resize\+By\+Percentage}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}}
+\subsubsection[{Resize\+By\+Percentage}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service.\+Resize\+By\+Percentage (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{stream, }
+\item[{Double}]{percentage, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a5bb2c643de3bd3c099e02720f6de426e}
+
+
+Resize image by Percentage. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the image to resize\\
+\hline
+{\em image\+Path} & Path of the local file to resize\\
+\hline
+{\em percentage} & Percentage to which image has to be resized\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_ae76b03bf61304d81a23379a570fbb9f4}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}!Scale@{Scale}}
+\index{Scale@{Scale}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service.\+Scale (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{stream, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_ae76b03bf61304d81a23379a570fbb9f4}
+
+
+Scales the image based on width and height. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the image to scale\\
+\hline
+{\em image\+Path} & Path of the local file to scale\\
+\hline
+{\em width} & Width of the image to scale\\
+\hline
+{\em height} & Height of the image to scale\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a433f3afc47020b6380a525bf7d4caaaf}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}!Scale\+By\+Percentage@{Scale\+By\+Percentage}}
+\index{Scale\+By\+Percentage@{Scale\+By\+Percentage}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}}
+\subsubsection[{Scale\+By\+Percentage}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service.\+Scale\+By\+Percentage (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{stream, }
+\item[{Double}]{percentage, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a433f3afc47020b6380a525bf7d4caaaf}
+
+
+Scales the image by Percentage. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the image file to scale\\
+\hline
+{\em image\+Path} & Path of the local file to scale\\
+\hline
+{\em percentage} & Percentage to which image has to be scaled\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a3f1219f47d1ecf1a58cc5b20bc87c46e}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}!Thumbnail@{Thumbnail}}
+\index{Thumbnail@{Thumbnail}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}}
+\subsubsection[{Thumbnail}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service.\+Thumbnail (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{stream, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a3f1219f47d1ecf1a58cc5b20bc87c46e}
+
+
+Creates a thumbnail of the image. There is a difference between thumbnail and resize The thumbnail operation is optimized for speed, it removes information of the image which is not necessary for a thumbnail e.\+g hearder information. Returns the original image url and converted image url. Images are stored on the cloud and can be accessed through the urls Resizing is done based on the width and height provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the image file for which thumbnail has to be created\\
+\hline
+{\em image\+Path} & Path of the local file whose thumbnail has to be created\\
+\hline
+{\em width} & Width of the image for thumbnail\\
+\hline
+{\em height} & Height of the image for thumbnail\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a2dd5e7b9bc287e2cc24f41d9e1a753c8}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}!Thumbnail\+By\+Percentage@{Thumbnail\+By\+Percentage}}
+\index{Thumbnail\+By\+Percentage@{Thumbnail\+By\+Percentage}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::image\+Processor\+::\+Image\+Processor\+Service}}
+\subsubsection[{Thumbnail\+By\+Percentage}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+image\+Processor.\+Image\+Processor\+Service.\+Thumbnail\+By\+Percentage (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{Stream}]{stream, }
+\item[{Double}]{percentage, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1image_processor_1_1_image_processor_service_a2dd5e7b9bc287e2cc24f41d9e1a753c8}
+
+
+Creates a thumbnail of the image by Percentage. There is a difference between thumbnail and resize The thumbnail operation is optimized for speed removes information of the image which is not necessary for a thumbnail to reduce size e.\+g hearder information. Returns the original image url and converted image url. Images are stored in the cloud and can be accessed through the urls Resizing is done based on the width and height provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the image file for which thumbnail has to be created\\
+\hline
+{\em image\+Path} & Path of the local file whose thumbnail has to be created\\
+\hline
+{\em percentage} & Percentage for thumbnail\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}

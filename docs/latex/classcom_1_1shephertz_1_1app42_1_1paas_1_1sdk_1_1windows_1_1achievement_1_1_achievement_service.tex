@@ -1,0 +1,212 @@
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service}{\section{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service Class Reference}
+\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service}\index{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service@{com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service}}
+}
+Inheritance diagram for com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a149b988c60b693fdea7149fd295cbf19}{Achievement\+Service} (String api\+Key, String secret\+Key, String base\+U\+R\+L)
+\begin{DoxyCompactList}\small\item\em This is a constructor that takes \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a3c148ce5b83f4807b921e0c092d0e169}{Create\+Achievement} (String achievement\+Name, String description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em You can create multiple achievement or badge for your app. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a554cdbd17d730a8ea654962ead24dc14}{Earn\+Achievement} (String user\+Name, String achievement\+Name, String game\+Name, String description, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em App users can earn achievements based on your custom rules in your game. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a10bbb774de960970de105dd0f02f1d0f}{Get\+All\+Achievements\+For\+User} (String user\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetch all the achievements of user. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a9052b8cab149cc20190176b4ad50a6d3}{Get\+All\+Achievements\+For\+User\+In\+Game} (String user\+Name, String game\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetch all the achievements by user in a particular game. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a18843fff41a195c519758cfd7ca497b3}{Get\+All\+Achievements} (\hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em View detail description of all achievements created in app. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_ab56eb4aedd68940d16614aab5b685ae3}{Get\+Achievement\+By\+Name} (String achievement\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetch detail description of achievement by achievement name. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_ac4637cbaa96470b3a7dba8a24fd37d9f}{Get\+Users\+Achievement} (String achievement\+Name, String game\+Name, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)
+\begin{DoxyCompactList}\small\item\em Fetch all users who have earn particular achievement in specific game. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a186fe876144a49d0f2485acda2de7d62}{override void {\bfseries On\+Success} (String response, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback, Boolean is\+Array)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a186fe876144a49d0f2485acda2de7d62}
+
+\item 
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a4f568f8cc5f0ce19bc03c49ad95bd227}{override void {\bfseries On\+Exception} (\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception} e, \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback} request\+Callback)}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a4f568f8cc5f0ce19bc03c49ad95bd227}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a149b988c60b693fdea7149fd295cbf19}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}!Achievement\+Service@{Achievement\+Service}}
+\index{Achievement\+Service@{Achievement\+Service}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}}
+\subsubsection[{Achievement\+Service}]{\setlength{\rightskip}{0pt plus 5cm}com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service.\+Achievement\+Service (
+\begin{DoxyParamCaption}
+\item[{String}]{api\+Key, }
+\item[{String}]{secret\+Key, }
+\item[{String}]{base\+U\+R\+L}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a149b988c60b693fdea7149fd295cbf19}
+
+
+This is a constructor that takes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & api\+Key\\
+\hline
+{\em secret\+Key} & secret\+Key\\
+\hline
+{\em base\+U\+R\+L} & base\+U\+R\+L\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a3c148ce5b83f4807b921e0c092d0e169}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}!Create\+Achievement@{Create\+Achievement}}
+\index{Create\+Achievement@{Create\+Achievement}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}}
+\subsubsection[{Create\+Achievement}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service.\+Create\+Achievement (
+\begin{DoxyParamCaption}
+\item[{String}]{achievement\+Name, }
+\item[{String}]{description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a3c148ce5b83f4807b921e0c092d0e169}
+
+
+You can create multiple achievement or badge for your app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em achievement\+Name} & Name of achievement to be created.\\
+\hline
+{\em description} & Description of the achievement.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a554cdbd17d730a8ea654962ead24dc14}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}!Earn\+Achievement@{Earn\+Achievement}}
+\index{Earn\+Achievement@{Earn\+Achievement}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}}
+\subsubsection[{Earn\+Achievement}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service.\+Earn\+Achievement (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{achievement\+Name, }
+\item[{String}]{game\+Name, }
+\item[{String}]{description, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a554cdbd17d730a8ea654962ead24dc14}
+
+
+App users can earn achievements based on your custom rules in your game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of the user for which achievement has to be earn.\\
+\hline
+{\em achievement\+Name} & Name of the achievement which is to be earn.\\
+\hline
+{\em game\+Name} & Name of the game for which achievement has to be earn.\\
+\hline
+{\em description} & Description of the achievement.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_ab56eb4aedd68940d16614aab5b685ae3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}!Get\+Achievement\+By\+Name@{Get\+Achievement\+By\+Name}}
+\index{Get\+Achievement\+By\+Name@{Get\+Achievement\+By\+Name}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}}
+\subsubsection[{Get\+Achievement\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service.\+Get\+Achievement\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{String}]{achievement\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_ab56eb4aedd68940d16614aab5b685ae3}
+
+
+Fetch detail description of achievement by achievement name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em achievement\+Name} & Name of the achievement which for which details to be fetch.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a18843fff41a195c519758cfd7ca497b3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}!Get\+All\+Achievements@{Get\+All\+Achievements}}
+\index{Get\+All\+Achievements@{Get\+All\+Achievements}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}}
+\subsubsection[{Get\+All\+Achievements}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service.\+Get\+All\+Achievements (
+\begin{DoxyParamCaption}
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a18843fff41a195c519758cfd7ca497b3}
+
+
+View detail description of all achievements created in app. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a10bbb774de960970de105dd0f02f1d0f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}!Get\+All\+Achievements\+For\+User@{Get\+All\+Achievements\+For\+User}}
+\index{Get\+All\+Achievements\+For\+User@{Get\+All\+Achievements\+For\+User}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}}
+\subsubsection[{Get\+All\+Achievements\+For\+User}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service.\+Get\+All\+Achievements\+For\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a10bbb774de960970de105dd0f02f1d0f}
+
+
+Fetch all the achievements of user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of user for which achievements has to be fetch.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a9052b8cab149cc20190176b4ad50a6d3}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}!Get\+All\+Achievements\+For\+User\+In\+Game@{Get\+All\+Achievements\+For\+User\+In\+Game}}
+\index{Get\+All\+Achievements\+For\+User\+In\+Game@{Get\+All\+Achievements\+For\+User\+In\+Game}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}}
+\subsubsection[{Get\+All\+Achievements\+For\+User\+In\+Game}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service.\+Get\+All\+Achievements\+For\+User\+In\+Game (
+\begin{DoxyParamCaption}
+\item[{String}]{user\+Name, }
+\item[{String}]{game\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_a9052b8cab149cc20190176b4ad50a6d3}
+
+
+Fetch all the achievements by user in a particular game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & Name of user for which achievements has to be fetch.\\
+\hline
+{\em game\+Name} & Name of the game for which achievements has to be fetch.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}\hypertarget{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_ac4637cbaa96470b3a7dba8a24fd37d9f}{\index{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}!Get\+Users\+Achievement@{Get\+Users\+Achievement}}
+\index{Get\+Users\+Achievement@{Get\+Users\+Achievement}!com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service@{com\+::shephertz\+::app42\+::paas\+::sdk\+::windows\+::achievement\+::\+Achievement\+Service}}
+\subsubsection[{Get\+Users\+Achievement}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+shephertz.\+app42.\+paas.\+sdk.\+windows.\+achievement.\+Achievement\+Service.\+Get\+Users\+Achievement (
+\begin{DoxyParamCaption}
+\item[{String}]{achievement\+Name, }
+\item[{String}]{game\+Name, }
+\item[{{\bf App42\+Callback}}]{request\+Callback}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service_ac4637cbaa96470b3a7dba8a24fd37d9f}
+
+
+Fetch all users who have earn particular achievement in specific game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em achievement\+Name} & Name of achievement for which all users has to fetch.\\
+\hline
+{\em game\+Name} & Name of the game for which user achievement has to fetch.\\
+\hline
+{\em request\+Callback} & Callback instance that will have the implementation of On\+Sucess and on\+Exception of \hyperlink{interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback}{App42\+Callback}\\
+\hline
+\end{DoxyParams}
+\hyperlink{classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception}{App42\+Exception}
