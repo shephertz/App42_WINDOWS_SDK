@@ -1,4 +1,16 @@
+* [Release Version 1.0.1](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_RT(8.1)_SDK/Change%20Log.md#version-101)
 * [Release Version 1.0](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_RT(8.1)_SDK/Change%20Log.md#version-10)
+
+## Version 1.0.1
+
+**Release Date:** 12-02-2015
+
+**Release Version:** 1.0.1
+
+*Bug Fix**
+```
+FindDocumentByQuery
+```
 
 ## Version 1.0
 
