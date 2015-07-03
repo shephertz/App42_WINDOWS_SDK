@@ -9,7 +9,7 @@ __Download And Set Up SDK :-__
 
 1). [Download] (https://github.com/shephertz/App42_WINDOWS_SDK/archive/master.zip) Windows SDK
 
-2). Unzip downloaded Zip file. Unzip folder contains two seperate folders for Windows-Phone and Windows-RT(8.1), and each folder contains version folder(ie. 1.0, 1.1 etc).
+2). Unzip downloaded Zip file. Unzip folder contains two seperate folders for Windows-Phone and Windows-RT(8.1), and each folder contains version folder(i.e. 1.0, 1.1 etc).
 
 3). In  Windows_Phone_SDK's version folder will contain App42_WINDOWS_PHONE_SDK_x.x.x.dll and Newtonsoft.Json.WindowsPhone.dll.
 
@@ -30,7 +30,7 @@ UserService userService = App42API.BuildUserService();
 //Similarly you can build other services like App42API.BuildXXXXService()
 ```
 
-__Note :-__ If you are using __Event Service__ and want to automate the App State Tracking i.e Application Open, Paused, Resume and Closed. Then you have to follow below steps :
+__Note :-__ If you are using __Event Service__ and want to automate the App State Tracking i.e. Application Open, Paused, Resume and Closed. Then you have to follow below steps :
 
 __1.__ Write __App42API.EnableAppStateEventTracking(true);__ just below the __App42API.Initialize();__ method.
        This will enable the App State Tracking.
