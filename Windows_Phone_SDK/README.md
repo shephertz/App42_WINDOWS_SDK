@@ -40,22 +40,25 @@ __2.__ Now you have to edit your app's __App.xaml.cs__ file :
 - Import App42 Event Service.
 ```
  using com.shephertz.app42.paas.sdk.windows.app42Event;
- ```
+```
+
 - Replace the __Application_Launching__ event handler in __App.xaml.cs__ with the following code.
  ```
- private void Application_Launching(object sender, LaunchingEventArgs e)
-{
-App42EventHandler.Execute_Application_Launching();
-}
- ```
+private void Application_Launching(object sender, LaunchingEventArgs e)
+     {
+        App42EventHandler.Execute_Application_Launching();
+     }
+```
+
  - Replace the __Application_Activated__ event handler in __App.xaml.cs__ with the following code.
- ```
+```
 private void Application_Activated(object sender, ActivatedEventArgs e)
- {
- App42EventHandler.Execute_Application_Activated();
-}
- ```
-     - Replace the __Application_Deactivated__ event handler in __App.xaml.cs__ with the following code.
+    {
+       App42EventHandler.Execute_Application_Activated();
+    }
+```
+
+ - Replace the __Application_Deactivated__ event handler in __App.xaml.cs__ with the following code.
      ```
      private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
