@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<xapCache source="D:\@KSH@Y\GIT-HUB-SDK\App42-WINDOWS-SDK\Windows_Phone_SDK\sample\Bin\Debug\App42Sample_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03/07/2015 12:33:36">
   <file source="D:\@KSH@Y\GIT-HUB-SDK\App42-WINDOWS-SDK\Windows_Phone_SDK\sample\obj\Debug\App42Sample.dll" archivePath="App42Sample.dll" lastWriteTime="03/07/2015 12:33:36" />
   <file source="D:\@KSH@Y\GIT-HUB-SDK\App42-WINDOWS-SDK\Windows_Phone_SDK\sample\lib\App42_WINDOWS_PHONE_SDK_2.5.dll" archivePath="lib\App42_WINDOWS_PHONE_SDK_2.5.dll" lastWriteTime="03/07/2015 12:25:38" />
@@ -10,4 +11,18 @@
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01/01/2013 18:57:00" />
   <file source="D:\@KSH@Y\GIT-HUB-SDK\App42-WINDOWS-SDK\Windows_Phone_SDK\sample\lib\Newtonsoft.Json.WindowsPhone.dll" archivePath="Newtonsoft.Json.WindowsPhone.dll" lastWriteTime="07/02/2014 15:18:33" />
   <file source="D:\@KSH@Y\GIT-HUB-SDK\App42-WINDOWS-SDK\Windows_Phone_SDK\sample\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="03/07/2015 12:31:17" />
+=======
+﻿<xapCache source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\Bin\Debug\App42Sample.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="7/31/2014 2:30:26 PM">
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="7/31/2014 2:02:31 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\Background.png" archivePath="Background.png" lastWriteTime="7/31/2014 2:02:31 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="7/31/2014 2:02:31 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\obj\Debug\App42Sample.dll" archivePath="App42Sample.dll" lastWriteTime="7/31/2014 2:30:23 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\lib\App42_WINDOWS_PHONE_SDK_2.4.dll" archivePath="App42_WINDOWS_PHONE_SDK_2.4.dll" lastWriteTime="7/31/2014 2:02:31 PM" />
+  <file source="C:\Program Files\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="9/15/2011 3:36:26 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\lib\Newtonsoft.Json.WindowsPhone.dll" archivePath="Newtonsoft.Json.WindowsPhone.dll" lastWriteTime="7/31/2014 2:02:31 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\lib\App42_WINDOWS_PHONE_SDK_2.4.dll" archivePath="lib\App42_WINDOWS_PHONE_SDK_2.4.dll" lastWriteTime="7/31/2014 2:02:31 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\lib\Newtonsoft.Json.WindowsPhone.dll" archivePath="lib\Newtonsoft.Json.WindowsPhone.dll" lastWriteTime="7/31/2014 2:02:31 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="7/31/2014 2:02:31 PM" />
+  <file source="C:\Users\Sachin\Desktop\SSSS\WINDOWS\Windows_Phone_SDK\sample\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/31/2014 2:30:26 PM" />
+>>>>>>> 9c624842a5c40e83048435163924fa3edc4a1572
 </xapCache>

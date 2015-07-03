@@ -1,15 +1,13 @@
 var searchData=
 [
   ['abtest',['ABTest',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1abtest_1_1_a_b_test.html',1,'com::shephertz::app42::paas::sdk::windows::abtest']]],
-  ['abtestresponsebuilder',['ABTestResponseBuilder',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1abtest_1_1_a_b_test_response_builder.html',1,'com::shephertz::app42::paas::sdk::windows::abtest']]],
   ['abtestservice',['ABTestService',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1abtest_1_1_a_b_test_service.html',1,'com::shephertz::app42::paas::sdk::windows::abtest']]],
   ['achievement',['Achievement',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement.html',1,'com::shephertz::app42::paas::sdk::windows::achievement']]],
-  ['achievementresponsebuilder',['AchievementResponseBuilder',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_response_builder.html',1,'com::shephertz::app42::paas::sdk::windows::achievement']]],
   ['achievementservice',['AchievementService',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1achievement_1_1_achievement_service.html',1,'com::shephertz::app42::paas::sdk::windows::achievement']]],
   ['acl',['ACL',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_a_c_l.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['album',['Album',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album.html',1,'com::shephertz::app42::paas::sdk::windows::gallery']]],
-  ['albumresponsebuilder',['AlbumResponseBuilder',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album_response_builder.html',1,'com::shephertz::app42::paas::sdk::windows::gallery']]],
   ['albumservice',['AlbumService',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery_1_1_album_service.html',1,'com::shephertz::app42::paas::sdk::windows::gallery']]],
+  ['app42api',['App42API',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_a_p_i.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['app42badparameterexception',['App42BadParameterException',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_bad_parameter_exception.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['app42callback',['App42Callback',['../interfacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_callback.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['app42exception',['App42Exception',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_exception.html',1,'com::shephertz::app42::paas::sdk::windows']]],
@@ -18,11 +16,9 @@ var searchData=
   ['app42log',['App42Log',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_log.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['app42notfoundexception',['App42NotFoundException',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_not_found_exception.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['app42response',['App42Response',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_response.html',1,'com::shephertz::app42::paas::sdk::windows']]],
-  ['app42responsebuilder',['App42ResponseBuilder',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_response_builder.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['app42securityexception',['App42SecurityException',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_security_exception.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['app42service',['App42Service',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1_app42_service.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['attribute',['Attribute',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1session_1_1_session_1_1_attribute.html',1,'com::shephertz::app42::paas::sdk::windows::session::Session']]],
   ['avatar',['Avatar',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar.html',1,'com::shephertz::app42::paas::sdk::windows::avatar']]],
-  ['avatarresponsebuilder',['AvatarResponseBuilder',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_response_builder.html',1,'com::shephertz::app42::paas::sdk::windows::avatar']]],
   ['avatarservice',['AvatarService',['../classcom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar_1_1_avatar_service.html',1,'com::shephertz::app42::paas::sdk::windows::avatar']]]
 ];

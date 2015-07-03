@@ -6,7 +6,6 @@ var searchData=
   ['avatar',['avatar',['../namespacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1avatar.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['buddy',['buddy',['../namespacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1buddy.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['com',['com',['../namespacecom.html',1,'']]],
-  ['connection',['connection',['../namespacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1connection.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['customcode',['customcode',['../namespacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1customcode.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['email',['email',['../namespacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1email.html',1,'com::shephertz::app42::paas::sdk::windows']]],
   ['gallery',['gallery',['../namespacecom_1_1shephertz_1_1app42_1_1paas_1_1sdk_1_1windows_1_1gallery.html',1,'com::shephertz::app42::paas::sdk::windows']]],
