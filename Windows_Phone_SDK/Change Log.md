@@ -1,3 +1,4 @@
+* [Release Version 2.5](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-25)
 * [Release Version 2.4](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-24)
 * [Release Version 2.3](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-23)
 * [Release Version 2.2](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-22)
@@ -10,6 +11,22 @@
 * [Release Version 1.7](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-17)
 * [Release Version 1.5](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_Phone_SDK/Change%20Log.md#version-15)
  
+## Version 2.5
+
+**Release Date:** 03-07-2015
+
+**Release Version:** 2.5
+
+
+**The following Services have been pushed to the latest :**
+```
+1. Event Service.
+```
+
+**This release contains the following bug fix:**
+```
+1. None.
+```
 
 ## Version 2.4
 
@@ -17,7 +34,7 @@
 
 **Release Version:** 2.4
 
-
+**The following Services have been pushed to the latest :**
 ```
 1.Timer Service.
 2.Gift Service.
