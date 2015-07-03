@@ -43,14 +43,14 @@ using com.shephertz.app42.paas.sdk.windows.app42Event;
 ```
 
 - Replace the __Application_Launching__ event handler in __App.xaml.cs__ with the following code.
- ```
+```
 private void Application_Launching(object sender, LaunchingEventArgs e)
      {
         App42EventHandler.Execute_Application_Launching();
      }
 ```
 
- - Replace the __Application_Activated__ event handler in __App.xaml.cs__ with the following code.
+- Replace the __Application_Activated__ event handler in __App.xaml.cs__ with the following code.
 ```
 private void Application_Activated(object sender, ActivatedEventArgs e)
     {
@@ -58,7 +58,7 @@ private void Application_Activated(object sender, ActivatedEventArgs e)
     }
 ```
 
- - Replace the __Application_Deactivated__ event handler in __App.xaml.cs__ with the following code.
+- Replace the __Application_Deactivated__ event handler in __App.xaml.cs__ with the following code.
 ```
 private void Application_Deactivated(object sender, DeactivatedEventArgs e)
     {
@@ -66,7 +66,7 @@ private void Application_Deactivated(object sender, DeactivatedEventArgs e)
     }
 ```
 
- - Replace the __Application_Closing__ event handler in __App.xaml.cs__ with the following code.
+- Replace the __Application_Closing__ event handler in __App.xaml.cs__ with the following code.
 ```
 private void Application_Closing(object sender, ClosingEventArgs e)
     {
