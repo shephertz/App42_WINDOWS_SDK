@@ -78,5 +78,3 @@ private void Application_Closing(object sender, ClosingEventArgs e)
       App42EventHandler.Execute_Application_Closing();
     }
 ```
-
-__3.__ Done. 
