@@ -33,7 +33,12 @@ UserService userService = App42API.BuildUserService();
 __Note :-__ If you are using __Event Service__ and want to automate the App State Tracking i.e. Application Open, Paused, Resume and Closed. Then you have to follow below steps :
 
 __1.__ Write __App42API.EnableAppStateEventTracking(true);__ just below the __App42API.Initialize();__ method.
-       This will enable the App State Tracking.
+This will enable the App State Tracking.
+
+```
+App42API.Initialize("API_KEY", "SECRET_KEY");
+App42API.EnableAppStateEventTracking(true);
+```
 
 __2.__ Now you have to edit your app's __App.xaml.cs__ file :
 
