@@ -34,6 +34,7 @@ __Note :-__ If you are using __Event Service__ and want to automate the App Stat
 __1.__ Write __App42API.EnableAppStateEventTracking(true);__ just below the __App42API.Initialize();__ method.
        This will enable the App State Tracking.
 __2.__ Now you have to edit your app's __App.xaml.cs__ file :
+
      - Import App42 Event Service.
      ```
      using com.shephertz.app42.paas.sdk.windows.app42Event;
@@ -67,4 +68,4 @@ __2.__ Now you have to edit your app's __App.xaml.cs__ file :
         }
      ```
 
-__3.__ App State Event Tracking configured. 
+__3.__ Done. 
