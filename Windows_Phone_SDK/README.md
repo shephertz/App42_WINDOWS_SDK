@@ -30,4 +30,41 @@ UserService userService = App42API.BuildUserService();
 //Similarly you can build other services like App42API.BuildXXXXService()
 ```
 
+__Note :-__ If you are using __Event Service__ and want to automate the App State Tracking i.e Application Open, Paused, Resume and Closed. Then you have to follow below steps :
+__1.__ Write __App42API.EnableAppStateEventTracking(true);__ just below the __App42API.Initialize();__ method.
+       This will enable the App State Tracking.
+__2.__ Now you have to edit your app's __App.xaml.cs__ file :
+     - Import App42 Event Service.
+     ```
+     using com.shephertz.app42.paas.sdk.windows.app42Event;
+     ```
+     - Replace the __Application_Launching__ event handler in __App.xaml.cs__ with the following code.
+     ```
+     private void Application_Launching(object sender, LaunchingEventArgs e)
+        {
+            App42EventHandler.Execute_Application_Launching();
+        }
+     ```
+     - Replace the __Application_Activated__ event handler in __App.xaml.cs__ with the following code.
+     ```
+     private void Application_Activated(object sender, ActivatedEventArgs e)
+        {
+            App42EventHandler.Execute_Application_Activated();
+        }
+     ```
+     - Replace the __Application_Deactivated__ event handler in __App.xaml.cs__ with the following code.
+     ```
+     private void Application_Deactivated(object sender, DeactivatedEventArgs e)
+        {
+            App42EventHandler.Execute_Application_Deactivated();
+        }
+     ```
+     - Replace the __Application_Closing__ event handler in __App.xaml.cs__ with the following code.
+     ```
+     private void Application_Closing(object sender, ClosingEventArgs e)
+        {
+            App42EventHandler.Execute_Application_Closing();
+        }
+     ```
 
+__3.__ App State Event Tracking configured. 
