@@ -1,6 +1,18 @@
+* [Release Version 1.2](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_RT(8.1)_SDK/Change%20Log.md#version-12)
 * [Release Version 1.1](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_RT(8.1)_SDK/Change%20Log.md#version-11)
 * [Release Version 1.0.1](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_RT(8.1)_SDK/Change%20Log.md#version-101)
 * [Release Version 1.0](https://github.com/shephertz/App42_WINDOWS_SDK/blob/master/Windows_RT(8.1)_SDK/Change%20Log.md#version-10)
+
+## Version 1.2
+
+**Release Date:** 15-09-2015
+
+**Release Version:** 1.2
+
+**New Service Added.**
+```
+Event Service.
+```
 
 ## Version 1.1
 
